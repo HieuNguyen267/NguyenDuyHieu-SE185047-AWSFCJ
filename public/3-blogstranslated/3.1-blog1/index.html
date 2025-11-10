@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/NguyenDuyHieu-SE185047-AWSFCJ/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NguyenDuyHieu-SE185047-AWSFCJ/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="hieundse185047@fpt.edu.vn" />
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Blog 1 :: Internship Report</title>
+
+    
+    <link href="../../css/nucleus.css?1762771015" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1762771015" rel="stylesheet">
+    <link href="../../css/hybrid.css?1762771015" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1762771015" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1762771015" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1762771015" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1762771015" rel="stylesheet">
+    <link href="../../css/theme.css?1762771015" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1762771015" rel="stylesheet">
+    
+    <link href="../../css/theme-workshop.css?1762771015" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1762771015"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../3-blogstranslated/3.1-blog1/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1762771015"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1762771015"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/NguyenDuyHieu-SE185047-AWSFCJ\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1762771015"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/2-proposal/"
+  title="Project Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/">
+     <b> 1. </b> Project Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/2-proposal/teammember/"
+  title="Proposal Report"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/teammember/">
+    Proposal Report 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Worklog Week 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Week 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.5-blog5/">
+     <b> 3.5. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.1-workshop-overview/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.2-prerequiste/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-s3-vpc/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-s3-onprem/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-policy/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-policy/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cleanup/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.6-cleanup/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/NguyenDuyHieu-SE185047-AWSFCJ/3-blogstranslated/3.1-blog1/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/NguyenDuyHieu-SE185047-AWSFCJ/vi/3-blogstranslated/3.1-blog1/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Internship Report</a> > <a href='../../3-blogstranslated/'>Translated Blogs</a> > Blog 1
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#goals-and-approach">Goals and Approach</a></li>
+    <li><a href="#ai-inference-at-ifood">AI Inference at iFood</a></li>
+    <li><a href="#solution-overview-legacy-architecture">Solution Overview (Legacy Architecture)</a></li>
+    <li><a href="#updated-architecture-and-ml-go">Updated Architecture and ML Go!</a></li>
+    <li><a href="#final-architecture-inference-components--ml-go-gateway">Final Architecture: Inference Components &amp; ML Go! Gateway</a></li>
+    <li><a href="#using-sagemaker-inference-model-serving-containers">Using SageMaker Inference Model Serving Containers</a></li>
+    <li><a href="#automating-deployment-and-retraining-ml-pipelines--cicd">Automating Deployment and Retraining (ML Pipelines &amp; CI/CD)</a></li>
+    <li><a href="#running-inference-at-different-sla-formats">Running Inference at Different SLA Formats</a></li>
+    <li><a href="#model-optimization-and-packaging">Model Optimization and Packaging</a></li>
+    <li><a href="#achieved-benefits--impact">Achieved Benefits &amp; Impact</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#about-the-authors">About the Authors</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 1
+            </h1>
+          
+
+        
+
+
+
+	<hr>
+<h1 id="how-ifood-built-a-platform-to-run-hundreds-of-machine-learning-models-with-amazon-sagemaker-inference">How iFood Built a Platform to Run Hundreds of Machine Learning Models with Amazon SageMaker Inference</h1>
+<p><em>By Daniel Vieira, Debora Fanin, Gopi Mudiyala, and Saurabh Trikande – April 8, 2025, in the Advanced section (300), Amazon SageMaker Data &amp; AI Governance, Customer Solutions.</em></p>
+<hr>
+<h2 id="introduction">Introduction</h2>
+<p>Headquartered in São Paulo, Brazil, <strong>iFood</strong> is a privately held national company and a leader in food tech in Latin America, processing millions of orders every month. iFood stands out for its strategy of integrating advanced technology into its operations. With the support of <strong>AWS</strong>, iFood has developed a powerful <strong>machine learning (ML)</strong> inference infrastructure using services like <strong>Amazon SageMaker</strong> to create and deploy ML models efficiently. This collaboration has allowed iFood to not only optimize internal processes but also provide innovative solutions for its delivery partners and restaurants.</p>
+<p>iFood&rsquo;s ML platform includes a set of tools, processes, and workflows developed with the following main objectives:</p>
+<ul>
+<li>Accelerating the development and training of AI/ML models, making them more reliable and easier to reproduce.</li>
+<li>Ensuring that the deployment of these models into production is reliable, scalable, and traceable.</li>
+<li>Enabling transparent, accessible, and standardized testing, monitoring, and evaluation of models in production.</li>
+</ul>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-1.png" alt="Blog Image 1 - 1"></p>
+<blockquote>
+<p><em>Figure 1. Overview — iFood and the application of AI/ML in their product system.</em></p>
+</blockquote>
+<hr>
+<h2 id="goals-and-approach">Goals and Approach</h2>
+<p>To achieve these goals, iFood leverages <strong>SageMaker</strong> to streamline model training and deployment. By integrating SageMaker features into iFood&rsquo;s infrastructure, key steps are automated — from creating training datasets, training models, deploying them into production, to continuously monitoring their performance.</p>
+<p>This article outlines how iFood uses SageMaker to enhance the entire ML lifecycle — from training to inference — and describes architectural changes and capabilities developed by the team.</p>
+<hr>
+<h2 id="ai-inference-at-ifood">AI Inference at iFood</h2>
+<p>iFood leverages its AI/ML platform to enhance customer experience across various touchpoints. Some typical use cases include:</p>
+<ul>
+<li><strong>Personalized Recommendations</strong> — Models analyze order history, preferences, and context to suggest appropriate restaurants and dishes, increasing customer satisfaction and order volume.</li>
+<li><strong>Smart Order Tracking</strong> — The system predicts delivery times in real-time by combining traffic data, restaurant preparation times, and the location of the delivery driver, proactively notifying customers.</li>
+<li><strong>Automated Customer Service</strong> — AI chatbots handle thousands of common requests daily, providing fast responses and retrieving relevant data to support personalization.</li>
+<li><strong>Grocery Shopping Support</strong> — The app integrates language models that help customers create shopping lists from voice or text requests.</li>
+</ul>
+<p>Thanks to these initiatives, iFood can forecast demand, optimize processes, and deliver consistent user experiences.</p>
+<hr>
+<h2 id="solution-overview-legacy-architecture">Solution Overview (Legacy Architecture)</h2>
+<p>The diagram below illustrates iFood&rsquo;s legacy architecture, where Data Science and Engineering teams had separate workflows — leading to challenges when deploying real-time ML models into production.</p>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-2.jpg" alt="Blog Image 1 - 2"></p>
+<blockquote>
+<p><em>Figure 2. Legacy Architecture — Describing data flow and the barriers between teams.</em></p>
+</blockquote>
+<p>Previously, data scientists developed models in notebooks, fine-tuned, and published artifacts. Engineers then had to integrate these artifacts into the production system, causing delays and integration errors. To address this, iFood developed an internal ML platform to unify the process from development to deployment, creating a seamless experience for both teams.</p>
+<hr>
+<h2 id="updated-architecture-and-ml-go">Updated Architecture and ML Go!</h2>
+<p>One of the core capabilities of iFood&rsquo;s ML platform is providing the infrastructure to serve predictions. The internal platform (called <strong>ML Go!</strong>) is responsible for managing the deployment process, overseeing SageMaker Endpoints and Jobs. ML Go! supports both offline (batch) and real-time (online) predictions, and manages the lifecycle of models (registry, versioning, monitoring).</p>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-3.jpg" alt="Blog Image 1 - 3"></p>
+<blockquote>
+<p><em>Figure 3. Updated Architecture — Including pipelines, model registry, and inference components.</em></p>
+</blockquote>
+<p>The platform provides:</p>
+<ul>
+<li>Automated ML pipelines (SageMaker Pipelines) for model training and retraining.</li>
+<li>ML Go! CI/CD to push artifacts, build Docker images, and trigger pipelines.</li>
+<li>SageMaker Model Registry for versioning and model management.</li>
+<li>Monitoring mechanisms to detect drift and performance degradation.</li>
+</ul>
+<hr>
+<h2 id="final-architecture-inference-components--ml-go-gateway">Final Architecture: Inference Components &amp; ML Go! Gateway</h2>
+<p>A significant improvement is the abstraction concept connecting with SageMaker (Endpoints &amp; Jobs) called <strong>ML Go! Gateway</strong>, along with separating &ldquo;inference components&rdquo; in the endpoint — helping to divide concerns, accelerate delivery, and manage resources more efficiently. Endpoints now manage multiple inference components, and ML Go! CI/CD only focuses on model version promotion, without deep intervention in infrastructure.</p>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-4.jpg" alt="Blog Image 1 - 4"></p>
+<blockquote>
+<p><em>Figure 4. Final Architecture — Inference components, ML Go! Gateway, and integration with service accounts.</em></p>
+</blockquote>
+<p>In this new structure:</p>
+<ul>
+<li>Endpoints can contain multiple inference components, allowing load distribution by function or load.</li>
+<li>ML Go! Dispatcher/Gateway forwards requests to the appropriate endpoint or job.</li>
+<li>CI/CD handles artifacts (Docker images, configs), and SageMaker Pipeline orchestrates training → evaluation → registry → deployment.</li>
+</ul>
+<hr>
+<h2 id="using-sagemaker-inference-model-serving-containers">Using SageMaker Inference Model Serving Containers</h2>
+<p>Standardizing the environment through containers is a crucial element of modern ML platforms. SageMaker provides built-in containers for TensorFlow, PyTorch, XGBoost, and more, as well as the ability to use custom containers.</p>
+<p>iFood focuses on using <strong>custom containers</strong> to:</p>
+<ul>
+<li>Standardize ML code (not directly using notebooks in production).</li>
+<li>Package dependencies, libraries, and inference logic in an image (e.g., BruceML scaffolding).</li>
+<li>Easily recreate training and serving environments, monitor results, and debug.</li>
+</ul>
+<p>BruceML helps standardize the way training and serving code is written, creating a scaffold compatible with SageMaker (autotuning, deployment hooks, monitoring).</p>
+<hr>
+<h2 id="automating-deployment-and-retraining-ml-pipelines--cicd">Automating Deployment and Retraining (ML Pipelines &amp; CI/CD)</h2>
+<p>iFood uses <strong>SageMaker Pipelines</strong> to build CI/CD for ML: pipelines are responsible for orchestrating the entire data flow — from preprocessing, training, evaluation, to promotion in the Model Registry and deployment. ML Go! CI/CD integrates with the organization’s CI/CD system to:</p>
+<ul>
+<li>Push artifacts (code + container image).</li>
+<li>Trigger training and evaluation pipelines.</li>
+<li>Automatically register models into the Model Registry.</li>
+<li>Deploy or promote models to the appropriate endpoint (online / batch).</li>
+</ul>
+<p>Depending on SLA:</p>
+<ul>
+<li><strong>Batch inference</strong>: Uses SageMaker Transform jobs for large-scale predictions.</li>
+<li><strong>Real-time inference</strong>: Deploys models to SageMaker Endpoint with the appropriate container/instance configuration.</li>
+</ul>
+<p>SageMaker Pipelines helps automate and coordinate complex workflows, reducing errors and shortening development cycles.</p>
+<hr>
+<h2 id="running-inference-at-different-sla-formats">Running Inference at Different SLA Formats</h2>
+<p>iFood uses multiple inference methods to meet different requirements:</p>
+<ul>
+<li><strong>Real-time endpoints</strong> for low-latency tasks (user-facing).</li>
+<li><strong>Batch transform jobs</strong> for large-scale data processing, periodic recommendations.</li>
+<li><strong>Asynchronous inference</strong> (SageMaker Asynchronous Inference) for time-consuming inference tasks.</li>
+<li><strong>Multi-model endpoints (GPU)</strong> to host multiple models on the same GPU endpoint, optimizing resource use.</li>
+</ul>
+<p>The improvements in collaboration between iFood and the SageMaker Inference team include:</p>
+<ul>
+<li>Optimizing cost and performance for inference (reducing ~50% of cost for some workloads, lowering ~20% average latency when using inference components).</li>
+<li>Improving autoscaling to handle spikes more effectively (shortening scaling time, enhancing detection of scale events).</li>
+<li>Easier deployment of LLM / Foundation Models (FM).</li>
+<li><strong>Scale-to-zero</strong> feature for endpoints helps save costs when there is no traffic.</li>
+<li>Multi-model GPU endpoints reduce infrastructure costs in multi-model scenarios.</li>
+</ul>
+<hr>
+<h2 id="model-optimization-and-packaging">Model Optimization and Packaging</h2>
+<p>Some technical points iFood focuses on:</p>
+<ul>
+<li>Standardizing containers for both training and serving.</li>
+<li>Automating the build/publish of images to the registry (ECR).</li>
+<li>Packaging LLM / FM for faster deployment.</li>
+<li>Supporting autoscaling and scale-to-zero for dev/test environments and low-traffic workloads.</li>
+</ul>
+<hr>
+<h2 id="achieved-benefits--impact">Achieved Benefits &amp; Impact</h2>
+<p>The benefits iFood has gained:</p>
+<ul>
+<li>Reduced time to get models into production (faster time-to-market).</li>
+<li>Increased pipeline &amp; artifact reuse across teams.</li>
+<li>Lower operational costs through GPU/multi-model optimization and scale-to-zero.</li>
+<li>Improved stability and model management at scale.</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>By leveraging SageMaker capabilities, iFood has transformed its approach to ML/AI: building a centralized ML platform (ML Go!), automating data flows, standardizing containers, and collaborating with the SageMaker Inference team to optimize efficiency, cost, and scalability. This has helped iFood:</p>
+<ul>
+<li>Bridge the gap between Data Science and Engineering.</li>
+<li>Deploy hundreds of ML models reliably.</li>
+<li>Create a reference platform for organizations wishing to apply inference at scale.</li>
+</ul>
+<blockquote>
+<p><em>“At iFood, we are leading the way in applying AI and machine learning technologies to transform&hellip; The lessons learned have helped us create our internal platform, which can serve as a blueprint for other organizations&hellip;”</em><br>
+– Daniel Vieira, Director of ML Platforms at iFood.</p>
+</blockquote>
+<hr>
+<h2 id="about-the-authors">About the Authors</h2>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-5.png" alt="Daniel Vieira"><br>
+<strong>Daniel Vieira</strong> — Director of Machine Learning Engineering at iFood. He has a background in computer science (BSc &amp; MSc, UFMG) and over a decade of experience in software engineering and ML platforms. He enjoys music, philosophy, and coffee.</p>
+<hr>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-6.png" alt="Debora Fanin"><br>
+<strong>Debora Fanin</strong> — Senior Customer Solutions Architect at AWS (Brazil). She specializes in managing enterprise customer transformation and designing effective cloud adoption strategies.</p>
+<hr>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-7.png" alt="Saurabh Trikande"><br>
+<strong>Saurabh Trikande</strong> — Senior Product Manager, Amazon Bedrock &amp; SageMaker Inference. Focuses on democratizing AI and inference solutions at scale.</p>
+<hr>
+<p><img src="../../images/3-BlogImage/Blog1/blog1-8.jpg" alt="Gopi Mudiyala"><br>
+<strong>Gopi Mudiyala</strong> — Senior Technical Account Manager at AWS. Supports clients in the financial services industry and is passionate about machine learning.</p>
+<hr>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../3-blogstranslated/" title="Translated Blogs"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../3-blogstranslated/3.2-blog2/" title="Blog 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1762771015"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1762771015"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1762771015"></script>
+    <script src="../../js/jquery.sticky.js?1762771015"></script>
+    <script src="../../js/featherlight.min.js?1762771015"></script>
+    <script src="../../js/highlight.pack.js?1762771015"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1762771015"></script>
+    <script src="../../js/learn.js?1762771015"></script>
+    <script src="../../js/hugo-learn.js?1762771015"></script>
+
+    <link href="../../mermaid/mermaid.css?1762771015" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1762771015"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
+

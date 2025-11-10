@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.1">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+    <title> :: Internship Report</title>
+
+    
+    <link href="../css/nucleus.css?1761207058" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1761207058" rel="stylesheet">
+    <link href="../css/hybrid.css?1761207058" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1761207058" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1761207058" rel="stylesheet">
+    <link href="../css/auto-complete.css?1761207058" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1761207058" rel="stylesheet">
+    <link href="../css/theme.css?1761207058" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1761207058" rel="stylesheet">
+    
+    <link href="../css/theme-workshop.css?1761207058" rel="stylesheet">
+    
+    
+
+    <script src="../js/jquery-3.3.1.min.js?1761207058"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../index.onthi/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js?1761207058"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1761207058"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/";
+    
+</script>
+<script type="text/javascript" src="../js/search.js?1761207058"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.5-blog5/">
+     <b> 3.5. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.1-workshop-overview/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.2-prerequiste/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-s3-vpc/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-policy/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.5-policy/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cleanup/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../5-workshop/5.6-cleanup/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/workshop-template/index.onthi/"
+                  selected
+                >
+                  English
+                </option>
+                     
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='../'>Internship Report</a> > 
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-secure-architectures-kiến-trúc-bảo-mật">1️⃣ Secure Architectures (Kiến trúc bảo mật)</a>
+      <ul>
+        <li><a href="#q1-iam-là-gì-và-mục-đích-chính-của-nó">Q1: IAM là gì và mục đích chính của nó?</a></li>
+        <li><a href="#q2-mfa-dùng-để-làm-gì">Q2: MFA dùng để làm gì?</a></li>
+        <li><a href="#q3-scp-trong-aws-organizations-là-gì">Q3: SCP trong AWS Organizations là gì?</a></li>
+        <li><a href="#q4-kms-và-acm-khác-nhau-như-thế-nào">Q4: KMS và ACM khác nhau như thế nào?</a></li>
+        <li><a href="#q5-security-group-và-nacl-khác-nhau-như-thế-nào">Q5: Security Group và NACL khác nhau như thế nào?</a></li>
+        <li><a href="#q6-guardduty-dùng-để-làm-gì">Q6: GuardDuty dùng để làm gì?</a></li>
+        <li><a href="#q7-aws-waf-khác-gì-với-aws-shield">Q7: AWS WAF khác gì với AWS Shield?</a></li>
+        <li><a href="#q8-secrets-manager-dùng-để-làm-gì">Q8: Secrets Manager dùng để làm gì?</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-resilient-architectures-kiến-trúc-linh-hoạt--bền-vững">2️⃣ Resilient Architectures (Kiến trúc linh hoạt &amp; bền vững)</a>
+      <ul>
+        <li><a href="#q9-multi-az-là-gì">Q9: Multi-AZ là gì?</a></li>
+        <li><a href="#q10-multi-region-khác-multi-az-thế-nào">Q10: Multi-Region khác Multi-AZ thế nào?</a></li>
+        <li><a href="#q11-các-chiến-lược-dr-phổ-biến">Q11: Các chiến lược DR phổ biến?</a></li>
+        <li><a href="#q12-auto-scaling-là-gì">Q12: Auto Scaling là gì?</a></li>
+        <li><a href="#q13-route-53-hoạt-động-ra-sao">Q13: Route 53 hoạt động ra sao?</a></li>
+        <li><a href="#q14-load-balancer-có-tác-dụng-gì">Q14: Load Balancer có tác dụng gì?</a></li>
+        <li><a href="#q15-backup--restore-là-chiến-lược-dr-loại-nào">Q15: Backup &amp; Restore là chiến lược DR loại nào?</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-high-performing-architectures-kiến-trúc-hiệu-năng-cao">3️⃣ High-Performing Architectures (Kiến trúc hiệu năng cao)</a>
+      <ul>
+        <li><a href="#q16-ec2-auto-scaling-giúp-cải-thiện-hiệu-năng-như-thế-nào">Q16: EC2 Auto Scaling giúp cải thiện hiệu năng như thế nào?</a></li>
+        <li><a href="#q17-lambda-khác-ec2-ở-điểm-gì">Q17: Lambda khác EC2 ở điểm gì?</a></li>
+        <li><a href="#q18-aws-fargate-là-gì">Q18: AWS Fargate là gì?</a></li>
+        <li><a href="#q19-s3-ebs-efs-khác-nhau-thế-nào">Q19: S3, EBS, EFS khác nhau thế nào?</a></li>
+        <li><a href="#q20-caching-giúp-gì-cho-hiệu-năng">Q20: Caching giúp gì cho hiệu năng?</a></li>
+        <li><a href="#q21-cloudfront-là-gì">Q21: CloudFront là gì?</a></li>
+        <li><a href="#q22-global-accelerator-dùng-để-làm-gì">Q22: Global Accelerator dùng để làm gì?</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-cost-optimized-architectures-kiến-trúc-tối-ưu-chi-phí">4️⃣ Cost-Optimized Architectures (Kiến trúc tối ưu chi phí)</a>
+      <ul>
+        <li><a href="#q23-aws-cost-explorer-dùng-để-làm-gì">Q23: AWS Cost Explorer dùng để làm gì?</a></li>
+        <li><a href="#q24-aws-budgets-khác-gì-cost-explorer">Q24: AWS Budgets khác gì Cost Explorer?</a></li>
+        <li><a href="#q25-savings-plans-là-gì">Q25: Savings Plans là gì?</a></li>
+        <li><a href="#q26-lifecycle-policies-trong-s3-giúp-gì">Q26: Lifecycle Policies trong S3 giúp gì?</a></li>
+        <li><a href="#q27-nat-gateway-optimization-là-gì">Q27: NAT Gateway Optimization là gì?</a></li>
+        <li><a href="#q28-storage-tiering-trong-s3-là-gì">Q28: Storage Tiering trong S3 là gì?</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-aws-well-architected-framework">5️⃣ AWS Well-Architected Framework</a>
+      <ul>
+        <li><a href="#q29-5-trụ-cột-pillars-chính-của-aws-well-architected-framework-là-gì">Q29: 5 trụ cột (pillars) chính của AWS Well-Architected Framework là gì?</a></li>
+        <li><a href="#q30-mục-tiêu-của-well-architected-framework-là-gì">Q30: Mục tiêu của Well-Architected Framework là gì?</a></li>
+      </ul>
+    </li>
+    <li><a href="#-dịch-vụ-trọng-tâm-cần-nắm">🔑 Dịch vụ trọng tâm cần nắm:</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              
+            </h1>
+          
+
+        
+
+
+<h1 id="-aws-midterm-review-questions--answers">🧠 AWS Midterm Review Questions &amp; Answers</h1>
+<h2 id="1-secure-architectures-kiến-trúc-bảo-mật">1️⃣ Secure Architectures (Kiến trúc bảo mật)</h2>
+<h3 id="q1-iam-là-gì-và-mục-đích-chính-của-nó">Q1: IAM là gì và mục đích chính của nó?</h3>
+<ul>
+<li><strong>A:</strong> IAM (Identity and Access Management) là dịch vụ giúp quản lý người dùng, nhóm, và quyền truy cập đến tài nguyên AWS một cách an toàn.</li>
+</ul>
+<h3 id="q2-mfa-dùng-để-làm-gì">Q2: MFA dùng để làm gì?</h3>
+<ul>
+<li><strong>A:</strong> MFA (Multi-Factor Authentication) thêm một lớp bảo mật bằng cách yêu cầu người dùng xác thực bằng hai yếu tố (mật khẩu + thiết bị xác thực).</li>
+</ul>
+<h3 id="q3-scp-trong-aws-organizations-là-gì">Q3: SCP trong AWS Organizations là gì?</h3>
+<ul>
+<li><strong>A:</strong> SCP (Service Control Policies) cho phép giới hạn quyền tối đa mà tài khoản con có thể sử dụng trong một Organization.</li>
+</ul>
+<h3 id="q4-kms-và-acm-khác-nhau-như-thế-nào">Q4: KMS và ACM khác nhau như thế nào?</h3>
+<ul>
+<li><strong>A:</strong>
+<ul>
+<li><strong>KMS (Key Management Service):</strong> Quản lý khóa mã hóa cho dữ liệu.</li>
+<li><strong>ACM (AWS Certificate Manager):</strong> Quản lý và cấp chứng chỉ SSL/TLS cho website.</li>
+</ul>
+</li>
+</ul>
+<h3 id="q5-security-group-và-nacl-khác-nhau-như-thế-nào">Q5: Security Group và NACL khác nhau như thế nào?</h3>
+<ul>
+<li><strong>A:</strong>
+<ul>
+<li><strong>Security Group:</strong> Kiểm soát truy cập ở mức <strong>instance</strong>, <strong>stateful</strong>.</li>
+<li><strong>NACL (Network ACL):</strong> Kiểm soát truy cập ở mức <strong>subnet</strong>, <strong>stateless</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="q6-guardduty-dùng-để-làm-gì">Q6: GuardDuty dùng để làm gì?</h3>
+<ul>
+<li><strong>A:</strong> Dịch vụ phát hiện mối đe dọa (threat detection) dựa trên machine learning, giúp giám sát hành vi bất thường trong tài khoản AWS.</li>
+</ul>
+<h3 id="q7-aws-waf-khác-gì-với-aws-shield">Q7: AWS WAF khác gì với AWS Shield?</h3>
+<ul>
+<li><strong>A:</strong>
+<ul>
+<li><strong>WAF:</strong> Bảo vệ ứng dụng web khỏi SQL injection, XSS.</li>
+<li><strong>Shield:</strong> Bảo vệ ứng dụng khỏi tấn công DDoS.</li>
+</ul>
+</li>
+</ul>
+<h3 id="q8-secrets-manager-dùng-để-làm-gì">Q8: Secrets Manager dùng để làm gì?</h3>
+<ul>
+<li><strong>A:</strong> Quản lý và luân chuyển tự động mật khẩu, token, API keys an toàn.</li>
+</ul>
+<hr>
+<h2 id="2-resilient-architectures-kiến-trúc-linh-hoạt--bền-vững">2️⃣ Resilient Architectures (Kiến trúc linh hoạt &amp; bền vững)</h2>
+<h3 id="q9-multi-az-là-gì">Q9: Multi-AZ là gì?</h3>
+<ul>
+<li><strong>A:</strong> Multi-AZ (Availability Zone) đảm bảo tính sẵn sàng cao bằng cách triển khai tài nguyên (như RDS) ở nhiều AZ trong cùng một region.</li>
+</ul>
+<h3 id="q10-multi-region-khác-multi-az-thế-nào">Q10: Multi-Region khác Multi-AZ thế nào?</h3>
+<ul>
+<li><strong>A:</strong> Multi-Region triển khai tài nguyên ở <strong>nhiều khu vực địa lý khác nhau</strong> → giúp <strong>DR (Disaster Recovery)</strong> toàn cầu.</li>
+</ul>
+<h3 id="q11-các-chiến-lược-dr-phổ-biến">Q11: Các chiến lược DR phổ biến?</h3>
+<ul>
+<li><strong>A:</strong> Backup &amp; Restore, Pilot Light, Warm Standby, Multi-Site Active-Active.</li>
+</ul>
+<h3 id="q12-auto-scaling-là-gì">Q12: Auto Scaling là gì?</h3>
+<ul>
+<li><strong>A:</strong> Dịch vụ tự động tăng/giảm số lượng instance EC2 dựa trên tải hệ thống.</li>
+</ul>
+<h3 id="q13-route-53-hoạt-động-ra-sao">Q13: Route 53 hoạt động ra sao?</h3>
+<ul>
+<li><strong>A:</strong> Dịch vụ DNS quản lý định tuyến traffic đến tài nguyên AWS, hỗ trợ health checks &amp; routing policies.</li>
+</ul>
+<h3 id="q14-load-balancer-có-tác-dụng-gì">Q14: Load Balancer có tác dụng gì?</h3>
+<ul>
+<li><strong>A:</strong> Phân phối lưu lượng đến nhiều EC2 để tăng tính sẵn sàng và hiệu năng.</li>
+</ul>
+<h3 id="q15-backup--restore-là-chiến-lược-dr-loại-nào">Q15: Backup &amp; Restore là chiến lược DR loại nào?</h3>
+<ul>
+<li><strong>A:</strong> Là chiến lược DR <strong>đơn giản nhất</strong> – lưu dữ liệu định kỳ để khôi phục khi cần.</li>
+</ul>
+<hr>
+<h2 id="3-high-performing-architectures-kiến-trúc-hiệu-năng-cao">3️⃣ High-Performing Architectures (Kiến trúc hiệu năng cao)</h2>
+<h3 id="q16-ec2-auto-scaling-giúp-cải-thiện-hiệu-năng-như-thế-nào">Q16: EC2 Auto Scaling giúp cải thiện hiệu năng như thế nào?</h3>
+<ul>
+<li><strong>A:</strong> Tự động mở rộng số lượng instance khi tải tăng và giảm khi tải giảm.</li>
+</ul>
+<h3 id="q17-lambda-khác-ec2-ở-điểm-gì">Q17: Lambda khác EC2 ở điểm gì?</h3>
+<ul>
+<li><strong>A:</strong> Lambda là <strong>serverless</strong> – không cần quản lý máy chủ, trả tiền theo số lần chạy.</li>
+</ul>
+<h3 id="q18-aws-fargate-là-gì">Q18: AWS Fargate là gì?</h3>
+<ul>
+<li><strong>A:</strong> Dịch vụ chạy container không cần quản lý server (dành cho ECS/EKS).</li>
+</ul>
+<h3 id="q19-s3-ebs-efs-khác-nhau-thế-nào">Q19: S3, EBS, EFS khác nhau thế nào?</h3>
+<ul>
+<li><strong>A:</strong>
+<ul>
+<li><strong>S3:</strong> Lưu trữ đối tượng (object storage).</li>
+<li><strong>EBS:</strong> Lưu trữ khối (block storage) cho EC2.</li>
+<li><strong>EFS:</strong> Lưu trữ file (file system) dùng chung cho nhiều EC2.</li>
+</ul>
+</li>
+</ul>
+<h3 id="q20-caching-giúp-gì-cho-hiệu-năng">Q20: Caching giúp gì cho hiệu năng?</h3>
+<ul>
+<li><strong>A:</strong> Giảm thời gian truy xuất dữ liệu nhờ lưu tạm kết quả tại vị trí gần người dùng (Redis, CloudFront).</li>
+</ul>
+<h3 id="q21-cloudfront-là-gì">Q21: CloudFront là gì?</h3>
+<ul>
+<li><strong>A:</strong> Dịch vụ CDN giúp phân phối nội dung tĩnh đến người dùng nhanh hơn bằng cách lưu cache ở edge locations.</li>
+</ul>
+<h3 id="q22-global-accelerator-dùng-để-làm-gì">Q22: Global Accelerator dùng để làm gì?</h3>
+<ul>
+<li><strong>A:</strong> Tối ưu đường truyền toàn cầu bằng cách định tuyến lưu lượng qua hạ tầng mạng AWS.</li>
+</ul>
+<hr>
+<h2 id="4-cost-optimized-architectures-kiến-trúc-tối-ưu-chi-phí">4️⃣ Cost-Optimized Architectures (Kiến trúc tối ưu chi phí)</h2>
+<h3 id="q23-aws-cost-explorer-dùng-để-làm-gì">Q23: AWS Cost Explorer dùng để làm gì?</h3>
+<ul>
+<li><strong>A:</strong> Phân tích, giám sát và trực quan hóa chi phí AWS theo thời gian.</li>
+</ul>
+<h3 id="q24-aws-budgets-khác-gì-cost-explorer">Q24: AWS Budgets khác gì Cost Explorer?</h3>
+<ul>
+<li><strong>A:</strong> Budgets cho phép <strong>đặt ngưỡng cảnh báo chi phí</strong>; Cost Explorer chỉ <strong>phân tích</strong>.</li>
+</ul>
+<h3 id="q25-savings-plans-là-gì">Q25: Savings Plans là gì?</h3>
+<ul>
+<li><strong>A:</strong> Hình thức giảm giá khi <strong>cam kết sử dụng tài nguyên compute</strong> trong 1–3 năm.</li>
+</ul>
+<h3 id="q26-lifecycle-policies-trong-s3-giúp-gì">Q26: Lifecycle Policies trong S3 giúp gì?</h3>
+<ul>
+<li><strong>A:</strong> Tự động chuyển dữ liệu giữa các lớp lưu trữ (ví dụ Standard → Glacier) để tiết kiệm chi phí.</li>
+</ul>
+<h3 id="q27-nat-gateway-optimization-là-gì">Q27: NAT Gateway Optimization là gì?</h3>
+<ul>
+<li><strong>A:</strong> Giảm chi phí bằng cách <strong>dùng PrivateLink</strong>, <strong>VPC Endpoint</strong>, hoặc <strong>chia NAT Gateway theo AZ</strong> hợp lý.</li>
+</ul>
+<h3 id="q28-storage-tiering-trong-s3-là-gì">Q28: Storage Tiering trong S3 là gì?</h3>
+<ul>
+<li><strong>A:</strong> Lưu trữ dữ liệu theo “tầng” tùy mức độ truy cập (Standard, Infrequent Access, Glacier).</li>
+</ul>
+<hr>
+<h2 id="5-aws-well-architected-framework">5️⃣ AWS Well-Architected Framework</h2>
+<h3 id="q29-5-trụ-cột-pillars-chính-của-aws-well-architected-framework-là-gì">Q29: 5 trụ cột (pillars) chính của AWS Well-Architected Framework là gì?</h3>
+<ul>
+<li><strong>A:</strong>
+<ol>
+<li>Operational Excellence (Vận hành xuất sắc)</li>
+<li>Security (Bảo mật)</li>
+<li>Reliability (Độ tin cậy)</li>
+<li>Performance Efficiency (Hiệu năng)</li>
+<li>Cost Optimization (Tối ưu chi phí)</li>
+</ol>
+</li>
+</ul>
+<h3 id="q30-mục-tiêu-của-well-architected-framework-là-gì">Q30: Mục tiêu của Well-Architected Framework là gì?</h3>
+<ul>
+<li><strong>A:</strong> Giúp thiết kế hệ thống AWS <strong>an toàn, hiệu quả, bền vững, linh hoạt và tối ưu chi phí.</strong></li>
+</ul>
+<hr>
+<h2 id="-dịch-vụ-trọng-tâm-cần-nắm">🔑 Dịch vụ trọng tâm cần nắm:</h2>
+<ul>
+<li><strong>EC2:</strong> Máy chủ ảo linh hoạt.</li>
+<li><strong>S3:</strong> Lưu trữ đối tượng.</li>
+<li><strong>IAM:</strong> Quản lý người dùng &amp; quyền.</li>
+<li><strong>RDS:</strong> Cơ sở dữ liệu quan hệ.</li>
+<li><strong>VPC:</strong> Mạng ảo riêng.</li>
+<li><strong>Lambda:</strong> Chạy mã không cần server.</li>
+<li><strong>CloudWatch:</strong> Giám sát hệ thống.</li>
+<li><strong>CloudFront:</strong> CDN tăng tốc phân phối nội dung.</li>
+</ul>
+<hr>
+<blockquote>
+<p>📘 <strong>Tip học nhanh:</strong></p>
+<ul>
+<li>Nhớ cặp “so sánh” (Security Group vs NACL, KMS vs ACM, EC2 vs Lambda).</li>
+<li>Gắn dịch vụ với chức năng thực tế (ví dụ: Route 53 = DNS, GuardDuty = threat detection).</li>
+<li>Học 5 pillars như kim chỉ nam của AWS Well-Architected Framework.</li>
+</ul></blockquote>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+		
+			<a class="nav nav-next" href="../1-worklog/" title="Worklog" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js?1761207058"></script>
+    <script src="../js/perfect-scrollbar.min.js?1761207058"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1761207058"></script>
+    <script src="../js/jquery.sticky.js?1761207058"></script>
+    <script src="../js/featherlight.min.js?1761207058"></script>
+    <script src="../js/highlight.pack.js?1761207058"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js?1761207058"></script>
+    <script src="../js/learn.js?1761207058"></script>
+    <script src="../js/hugo-learn.js?1761207058"></script>
+
+    <link href="../mermaid/mermaid.css?1761207058" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1761207058"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
+

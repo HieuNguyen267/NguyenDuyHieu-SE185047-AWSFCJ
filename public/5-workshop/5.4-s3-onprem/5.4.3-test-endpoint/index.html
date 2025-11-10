@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/NguyenDuyHieu-SE185047-AWSFCJ/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=NguyenDuyHieu-SE185047-AWSFCJ/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="hieundse185047@fpt.edu.vn" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title> :: Internship Report</title>
+
+    
+    <link href="../../../css/nucleus.css?1762771015" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1762771015" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1762771015" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1762771015" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1762771015" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1762771015" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1762771015" rel="stylesheet">
+    <link href="../../../css/theme.css?1762771015" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1762771015" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1762771015" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1762771015"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1762771015"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1762771015"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/NguyenDuyHieu-SE185047-AWSFCJ\/";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1762771015"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/2-proposal/"
+  title="Project Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../2-proposal/">
+     <b> 1. </b> Project Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/2-proposal/teammember/"
+  title="Proposal Report"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../2-proposal/teammember/">
+    Proposal Report 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Worklog Week 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Week 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.5-blog5/">
+     <b> 3.5. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title=""
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../5-workshop/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.1-workshop-overview/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequiste/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.2-prerequiste/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-s3-vpc/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/"
+  title=""
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-s3-onprem/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title=""
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-policy/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.5-policy/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cleanup/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../5-workshop/5.6-cleanup/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="http://localhost:1313/NguyenDuyHieu-SE185047-AWSFCJ/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="http://localhost:1313/NguyenDuyHieu-SE185047-AWSFCJ/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../'>Internship Report</a> > <a href='../../../5-workshop/'></a> > <a href='../../../5-workshop/5.4-s3-onprem/'></a> > 
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading">E:\thuctap\report mau\fcj-workshop-template-main&gt;( echo — | findstr /R “^date:” 1&gt;nul<br> if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z ) else (echo — ) )</a></li>
+    <li><a href="#heading-1">E:\thuctap\report mau\fcj-workshop-template-main&gt;( echo — | findstr /R “^date:” 1&gt;nul<br> if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z ) else (echo — ) )</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="heading">E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo &mdash;   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo &mdash; )
+)</h2>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo title : &ldquo;Test the Interface Endpoint&rdquo;   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo title : &ldquo;Test the Interface Endpoint&rdquo; )
+)
+title : &ldquo;Test the Interface Endpoint&rdquo;</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo date : &ldquo;<code>r Sys.Date()</code>&rdquo;   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo date : &ldquo;<code>r Sys.Date()</code>&rdquo; )
+)
+date : &ldquo;<code>r Sys.Date()</code>&rdquo;</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo weight : 3   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo weight : 3 )
+)
+weight : 3</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo chapter : false   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo chapter : false )
+)
+chapter : false</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo pre : &quot; <b> 5.4.3 </b> &quot;   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo pre : &quot; <b> 5.4.3 </b> &quot; )
+)
+pre : &quot; <b> 5.4.3 </b> &quot;</p>
+<h2 id="heading-1">E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo &mdash;   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo &mdash; )
+)</h2>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo #### Get the regional DNS name of S3 interface endpoint   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo #### Get the regional DNS name of S3 interface endpoint )
+)</p>
+<h4 id="get-the-regional-dns-name-of-s3-interface-endpoint">Get the regional DNS name of S3 interface endpoint</h4>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 1. From the Amazon VPC menu, choose Endpoints.   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 1. From the Amazon VPC menu, choose Endpoints. )
+)</p>
+<ol>
+<li>From the Amazon VPC menu, choose Endpoints.</li>
+</ol>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 2. Click the name of newly created endpoint: s3-interface-endpoint. Click details and save the regional DNS name of the endpoint (the first one) to your text-editor for later use.    | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 2. Click the name of newly created endpoint: s3-interface-endpoint. Click details and save the regional DNS name of the endpoint (the first one) to your text-editor for later use.  )
+)
+2. Click the name of newly created endpoint: s3-interface-endpoint. Click details and save the regional DNS name of the endpoint (the first one) to your text-editor for later use.</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo <img src="../../../images/5-Workshop/5.4-S3-onprem/dns.png" alt="dns name">   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo <img src="../../../images/5-Workshop/5.4-S3-onprem/dns.png" alt="dns name"> )
+)
+<img src="../../../images/5-Workshop/5.4-S3-onprem/dns.png" alt="dns name"></p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo #### Connect to EC2 instance in &ldquo;VPC On-prem&rdquo;   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo #### Connect to EC2 instance in &ldquo;VPC On-prem&rdquo; )
+)</p>
+<h4 id="connect-to-ec2-instance-in-vpc-on-prem">Connect to EC2 instance in &ldquo;VPC On-prem&rdquo;</h4>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 1. Navigate to <strong>Session manager</strong> by typing &ldquo;session manager&rdquo; in the search box    | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 1. Navigate to <strong>Session manager</strong> by typing &ldquo;session manager&rdquo; in the search box  )
+)</p>
+<ol>
+<li>Navigate to <strong>Session manager</strong> by typing &ldquo;session manager&rdquo; in the search box</li>
+</ol>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 2. Click <strong>Start Session</strong>, and select the EC2 instance named <strong>Test-Interface-Endpoint</strong>. This EC2 instance is running in &ldquo;VPC On-prem&rdquo; and will be used to test connectivty to Amazon S3 through the Interface endpoint we just created. Session Manager will open a new browser tab with a shell prompt: <strong>sh-4.2 $</strong>   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 2. Click <strong>Start Session</strong>, and select the EC2 instance named <strong>Test-Interface-Endpoint</strong>. This EC2 instance is running in &ldquo;VPC On-prem&rdquo; and will be used to test connectivty to Amazon S3 through the Interface endpoint we just created. Session Manager will open a new browser tab with a shell prompt: <strong>sh-4.2 $</strong> )
+)
+2. Click <strong>Start Session</strong>, and select the EC2 instance named <strong>Test-Interface-Endpoint</strong>. This EC2 instance is running in &ldquo;VPC On-prem&rdquo; and will be used to test connectivty to Amazon S3 through the Interface endpoint we just created. Session Manager will open a new browser tab with a shell prompt: <strong>sh-4.2 $</strong></p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo <img src="../../../images/5-Workshop/5.4-S3-onprem/start-session.png" alt="Start session">   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo <img src="../../../images/5-Workshop/5.4-S3-onprem/start-session.png" alt="Start session"> )
+)
+<img src="../../../images/5-Workshop/5.4-S3-onprem/start-session.png" alt="Start session"></p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 3. Change to the ssm-user&rsquo;s home directory with command &ldquo;cd ~&rdquo;   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 3. Change to the ssm-user&rsquo;s home directory with command &ldquo;cd ~&rdquo; )
+)
+3. Change to the ssm-user&rsquo;s home directory with command &ldquo;cd ~&rdquo;</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 4. Create a file named testfile2.xyz   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 4. Create a file named testfile2.xyz )
+)
+4. Create a file named testfile2.xyz</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo <code>  | findstr /R &quot;^date:&quot;  1&gt;nul   if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo</code> )
+)</p>
+<pre tabindex="0"><code>
+E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo fallocate -l 1G testfile2.xyz   | findstr /R &#34;^date:&#34;  1&gt;nul  
+ if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo fallocate -l 1G testfile2.xyz ) 
+) 
+fallocate -l 1G testfile2.xyz
+
+E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo ```   | findstr /R &#34;^date:&#34;  1&gt;nul  
+ if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo ``` ) 
+) 
+</code></pre><p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo <img src="../../../images/5-Workshop/5.4-S3-onprem/cli1.png" alt="user">   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo <img src="../../../images/5-Workshop/5.4-S3-onprem/cli1.png" alt="user"> )
+)
+<img src="../../../images/5-Workshop/5.4-S3-onprem/cli1.png" alt="user"></p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 5. Copy file to the same S3 bucket we created in section 3.2   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 5. Copy file to the same S3 bucket we created in section 3.2 )
+)
+5. Copy file to the same S3 bucket we created in section 3.2</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo <code>  | findstr /R &quot;^date:&quot;  1&gt;nul   if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo</code> )
+)</p>
+<pre tabindex="0"><code>
+E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo aws s3 cp --endpoint-url https://bucket.&lt;Regional-DNS-Name&gt; testfile2.xyz s3://&lt;your-bucket-name&gt;   | findstr /R &#34;^date:&#34;  1&gt;nul  
+ if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo aws s3 cp --endpoint-url https://bucket.&lt;Regional-DNS-Name&gt; testfile2.xyz s3://&lt;your-bucket-name&gt; ) 
+) 
+aws s3 cp --endpoint-url https://bucket.&lt;Regional-DNS-Name&gt; testfile2.xyz s3://&lt;your-bucket-name&gt;
+
+E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo ```    | findstr /R &#34;^date:&#34;  1&gt;nul  
+ if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo ```  ) 
+) 
+</code></pre><p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo + This command requires the &ndash;endpoint-url parameter, because you need to use the endpoint-specific DNS name to access S3 using an Interface endpoint.   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo + This command requires the &ndash;endpoint-url parameter, because you need to use the endpoint-specific DNS name to access S3 using an Interface endpoint. )
+)</p>
+<ul>
+<li>This command requires the &ndash;endpoint-url parameter, because you need to use the endpoint-specific DNS name to access S3 using an Interface endpoint.</li>
+</ul>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo + Do not include the leading &rsquo; * &rsquo; when copying/pasting the regional DNS name.   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo + Do not include the leading &rsquo; * &rsquo; when copying/pasting the regional DNS name. )
+)</p>
+<ul>
+<li>Do not include the leading &rsquo; * &rsquo; when copying/pasting the regional DNS name.</li>
+</ul>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo + Provide your S3 bucket name created earlier   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo + Provide your S3 bucket name created earlier )
+)</p>
+<ul>
+<li>Provide your S3 bucket name created earlier</li>
+</ul>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo <img src="../../../images/5-Workshop/5.4-S3-onprem/cli2.png" alt="copy file">   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo <img src="../../../images/5-Workshop/5.4-S3-onprem/cli2.png" alt="copy file"> )
+)
+<img src="../../../images/5-Workshop/5.4-S3-onprem/cli2.png" alt="copy file"></p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo Now the file has been added to your S3 bucket. Let check your S3 bucket in the next step.   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo Now the file has been added to your S3 bucket. Let check your S3 bucket in the next step. )
+)
+Now the file has been added to your S3 bucket. Let check your S3 bucket in the next step.</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo #### Check Object in S3 bucket   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo #### Check Object in S3 bucket )
+)</p>
+<h4 id="check-object-in-s3-bucket">Check Object in S3 bucket</h4>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 1. Navigate to S3 console   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 1. Navigate to S3 console )
+)</p>
+<ol>
+<li>Navigate to S3 console</li>
+</ol>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 2. Click Buckets   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 2. Click Buckets )
+)
+2. Click Buckets</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo 3. Click the name of your bucket and you will see testfile2.xyz has been added to your bucket   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 3. Click the name of your bucket and you will see testfile2.xyz has been added to your bucket )
+)
+3. Click the name of your bucket and you will see testfile2.xyz has been added to your bucket</p>
+<p>E:\thuctap\report mau\fcj-workshop-template-main&gt;(
+echo <img src="../../../images/5-Workshop/5.4-S3-onprem/check-bucket.png" alt="check bucket">   | findstr /R &ldquo;^date:&rdquo;  1&gt;nul<br>
+if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo <img src="../../../images/5-Workshop/5.4-S3-onprem/check-bucket.png" alt="check bucket"> )
+)
+<img src="../../../images/5-Workshop/5.4-S3-onprem/check-bucket.png" alt="check bucket"></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/" title=""> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1762771015"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1762771015"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1762771015"></script>
+    <script src="../../../js/jquery.sticky.js?1762771015"></script>
+    <script src="../../../js/featherlight.min.js?1762771015"></script>
+    <script src="../../../js/highlight.pack.js?1762771015"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1762771015"></script>
+    <script src="../../../js/learn.js?1762771015"></script>
+    <script src="../../../js/hugo-learn.js?1762771015"></script>
+
+    <link href="../../../mermaid/mermaid.css?1762771015" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1762771015"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
+
