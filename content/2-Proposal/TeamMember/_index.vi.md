@@ -16,7 +16,7 @@ chapter: false
 
 &emsp; **Trần Hồ Phương Khanh** --- Front-End, Business Analysis --- khanhthpse185070@fpt.edu.vn --- 0854406820
 
-&emsp; **Tăng Khánh Nhi** --- Front-End --- tangkhanhnhi111@gmail.com --- 0944865947
+&emsp; **Tăng Khánh Nhi** --- Front-End, Business Analysis --- tangkhanhnhi111@gmail.com --- 0944865947
 
 
 ### Nội Dung Báo Cáo:
