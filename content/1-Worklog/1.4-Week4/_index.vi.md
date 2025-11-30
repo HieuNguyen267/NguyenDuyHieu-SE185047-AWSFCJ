@@ -1,59 +1,31 @@
 ---
 title: "Worklog Tuần 4"
-date: 2025-01-01
-weight: 1
+date: 2025-10-03
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 4:
 
-### Mục tiêu tuần 4:
+* Hiểu về các **Cơ sở dữ liệu AWS** (RDS, DynamoDB).  
+* Học cách triển khai và quản lý các instance cơ sở dữ liệu.  
+* Tìm hiểu về sao lưu cơ sở dữ liệu, mở rộng quy mô và tối ưu hóa hiệu suất.  
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các nhiệm vụ trong Tuần 4
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 29/09/2025   | 29/09/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 30/09/2025  | 30/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 01/10/2025   | 01/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 02/10/2025   | 02/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 03/10/2025   | 03/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|-----|------------|---------------|-----------------|----------------|
+| 1   | - **Học về AWS RDS** <br>&emsp;+ Tạo một instance RDS <br>&emsp;+ Sao lưu và bảo trì RDS | 29/09/2025 | 29/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 2   | - **Học về DynamoDB** <br>&emsp;+ Giới thiệu về DynamoDB <br>&emsp;+ Làm việc với bảng và dữ liệu | 30/09/2025 | 30/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 3   | - **Tìm hiểu sao lưu cơ sở dữ liệu và khôi phục dữ liệu trong RDS** | 01/10/2025 | 01/10/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 4   | - **Tìm hiểu về tối ưu hóa hiệu suất cơ sở dữ liệu trong AWS** | 02/10/2025 | 02/10/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 5   | - **Thực hành labs cho RDS và DynamoDB** | 03/10/2025 | 03/10/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
 
+### Thành tựu Tuần 4:
+* Đã triển khai và cấu hình các **instance RDS**.
+* Làm quen và thực hành với **DynamoDB** để lưu trữ và quản lý dữ liệu.
+* Hiểu về **sao lưu và khôi phục dữ liệu** trong **RDS**.
+* Thực hành **tối ưu hóa hiệu suất** cơ sở dữ liệu trong AWS.
 
-### Kết quả đạt được tuần 4:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+---

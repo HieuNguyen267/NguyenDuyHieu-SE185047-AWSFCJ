@@ -1,55 +1,33 @@
 ---
 title: "Worklog Tuần 2"
-date: 2025-01-01
-weight: 1
+date: 2025-09-19
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
+
+### Mục tiêu Tuần 2:
+
+* Đi sâu vào các dịch vụ **AWS**, tập trung vào **Compute**, **Networking**, và **Storage**.  
+* Làm quen với **AWS EC2**, **S3**, **Lambda**, và **Elastic Beanstalk**.  
+* Thực hành tạo và quản lý các instance, làm việc với lưu trữ và triển khai ứng dụng web.  
+* Hiểu về **AWS IAM** để quản lý danh tính và quyền truy cập.  
+
+### Các nhiệm vụ trong Tuần 2
+
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+|-----|------------|---------------|-----------------|----------------|
+| 1   | - **Học cơ bản về AWS EC2** <br>&emsp;+ EC2 là gì? <br>&emsp;+ Các loại instance EC2 <br>&emsp;+ Nhóm bảo mật EC2 <br>&emsp;+ Quản lý các instance EC2 | 15/09/2025 | 15/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 2   | - **Học về AWS S3** <br>&emsp;+ Tạo Bucket S3 <br>&emsp;+ Quản lý đối tượng trong S3 <br>&emsp;+ Kiểm soát quyền truy cập trong S3 | 16/09/2025 | 16/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 3   | - **Học về AWS Lambda** <br>&emsp;+ Giới thiệu về AWS Lambda <br>&emsp;+ Tạo một hàm Lambda đơn giản <br>&emsp;+ Kích hoạt Lambda với các dịch vụ AWS | 17/09/2025 | 17/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 4   | - **Học về AWS Elastic Beanstalk** <br>&emsp;+ Tổng quan về Elastic Beanstalk <br>&emsp;+ Triển khai ứng dụng mẫu bằng Elastic Beanstalk | 18/09/2025 | 18/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 5   | - **Học về IAM (Identity and Access Management)** <br>&emsp;+ Tạo và quản lý người dùng, vai trò IAM <br>&emsp;+ Chính sách và quyền truy cập | 19/09/2025 | 19/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+| 6   | - **Thực hành labs cho EC2, S3, Lambda, Beanstalk** | 20/09/2025 | 20/09/2025 | **[Tài liệu học](https://cloudjourney.awsstudygroup.com/)** |
+
+### Thành tựu Tuần 2:
+* Đã tạo và quản lý các **instance EC2**.
+* Học cách cấu hình và sử dụng **AWS S3** để lưu trữ và quản lý đối tượng.
+* Đã tạo và kiểm tra **hàm Lambda trên AWS**.
+* Đã triển khai ứng dụng mẫu bằng **AWS Elastic Beanstalk**.
+* Hiểu về **AWS IAM**, tạo người dùng, nhóm, vai trò và áp dụng chính sách.
 ---
-### Mục tiêu tuần 2:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 15/09/2025   | 15/09/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 16/09/2025   | 16/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 17/09/2025   | 17/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - **Tham dự event Vietnam Cloud Day 2025**               | 18/09/2025   | 18/09/2025      | **[Vietnam Cloud Day 2025](https://pages.awscloud.com/vietnam-cloud-day-hcmc-connect-edition.html#agenda?trk=6e54a9d8-6af6-4dc0-8faf-cb98945e2db5&sc_channel=em/)**|
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 19/09/2025   | 19/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Kết quả đạt được tuần 2:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
