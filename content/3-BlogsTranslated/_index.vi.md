@@ -8,20 +8,11 @@ pre: " <b> 3. </b> "
 
 
 
-###  [Blog 1 - Cách iFood xây dựng nền tảng để chạy hàng trăm mô hình machine learning với Amazon SageMaker Inference](3.1-Blog1/)
-Blog này giới thiệu cách iFood sử dụng Amazon SageMaker Inference để vận hành hàng trăm mô hình machine learning trên quy mô lớn. Bài viết trình bày cách iFood tự động hóa quy trình huấn luyện, triển khai và giám sát mô hình, đồng thời tối ưu chi phí và hiệu suất với các tính năng như zero-scale endpoints và multi-model GPU serving.
+###  [Blog 1 - Migrate .NET Framework applications to Linux with AWS Transform for .NET ](3.1-Blog1/)
+Blog này giới thiệu AWS Transform cho .NET, một dịch vụ AI giúp tự động hóa và tăng tốc quá trình chuyển đổi ứng dụng .NET Framework sang .NET 8 để chạy trên Linux. Bài viết cung cấp hướng dẫn từng bước về cách sử dụng công cụ này trong Visual Studio để phân tích mã nguồn, chuyển đổi các gói NuGet và cập nhật mã, giúp giảm chi phí bản quyền và tăng hiệu quả vận hành.
 
-###  [Blog 2 - Cách Salesforce Business Technology sử dụng AWS Direct Connect SiteLink để kết nối toàn cầu đáng tin cậy](3.2-Blog2/)
-Blog này mô tả cách Salesforce Business Technology triển khai AWS Direct Connect SiteLink để xây dựng kiến trúc mạng toàn cầu đáng tin cậy. Bài viết chia sẻ cách SiteLink giúp Salesforce hợp nhất mạng giữa bảy địa điểm, giảm độ trễ, tăng cường bảo mật và đơn giản hóa vận hành bằng cách tận dụng AWS global backbone.
+###  [Blog 2 - Containerize legacy ASP.NET applications using AWS Migration Hub Orchestrator](3.2-Blog2/)
+Blog này hướng dẫn cách sử dụng AWS Migration Hub Orchestrator để đóng gói và triển khai các ứng dụng ASP.NET cũ lên Amazon ECS và AWS Fargate thông qua giao diện điều khiển. Bài viết chia sẻ quy trình đơn giản hóa việc chuyển đổi ứng dụng sang container chỉ với vài cú nhấp chuột mà không cần cài đặt công cụ bổ sung, giúp doanh nghiệp dễ dàng hiện đại hóa cơ sở hạ tầng Windows trên đám mây.
 
-###  [Blog 3 - Giải pháp Nhà máy điện thông minh của TCS trên AWS giúp các tiện ích tối ưu hóa hoạt động và thúc đẩy chuyển đổi năng lượng như thế nào](3.3-Blog3/)
-Blog này giới thiệu cách Tata Consultancy Services (TCS) triển khai Smart Power Plant trên AWS, giúp các công ty năng lượng tối ưu hiệu suất, giảm khí thải và thúc đẩy chuyển đổi năng lượng bền vững. Giải pháp sử dụng AI/ML, IoT và digital twin để phân tích dữ liệu theo thời gian thực, dự đoán sự cố và tối ưu quá trình phát điện. Bài viết cũng trình bày các trường hợp sử dụng thực tế như dự báo năng lượng tái tạo, tối ưu quá trình đốt cháy và bảo trì dự đoán, mang lại hiệu quả kinh tế và giảm phát thải carbon.
-
-###  [Blog 4 - ...](3.4-Blog4/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
-
-###  [Blog 5 - ...](3.5-Blog5/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
-
-###  [Blog 6 - ...](3.6-Blog6/)
-Blog này giới thiệu cách bắt đầu xây dựng data lake trong lĩnh vực y tế bằng cách áp dụng kiến trúc microservices. Bạn sẽ tìm hiểu vì sao data lake quan trọng trong việc lưu trữ và phân tích dữ liệu y tế đa dạng (hồ sơ bệnh án điện tử, dữ liệu xét nghiệm, thiết bị IoT y tế…), cách microservices giúp hệ thống linh hoạt, dễ mở rộng và dễ bảo trì hơn. Bài viết cũng hướng dẫn các bước khởi tạo môi trường, tổ chức pipeline xử lý dữ liệu, và đảm bảo tuân thủ các tiêu chuẩn bảo mật & quyền riêng tư như HIPAA.
+###  [Blog 3 - New digital courses on AWS Graviton processors](3.3-Blog3/)
+Blog này giới thiệu loạt ba khóa học kỹ thuật số mới về bộ xử lý AWS Graviton, bao gồm các cấp độ từ cơ bản đến trung cấp về di chuyển và tối ưu hóa. Bài viết giải thích cách các khóa học này giúp các nhà phát triển và kiến trúc sư đám mây tận dụng Graviton để cải thiện hiệu suất ứng dụng và tối ưu hóa chi phí, với khả năng đạt hiệu suất trên giá thành tốt hơn tới 40% so với các phiên bản tương đương.
