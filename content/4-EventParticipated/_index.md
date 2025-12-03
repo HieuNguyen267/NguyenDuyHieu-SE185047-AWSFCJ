@@ -1,30 +1,32 @@
 ---
 title: "Events Participated"
-date: 2025-01-01
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
 ### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** Vietnam Cloud Day 2025  
+**Event Name:** AWS Cloud Day Vietnam - AI Edition 2025  
+**Date:** September 18, 2025  
+**Location:** 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City  
+**Role in the Event:** Participant  
 
-&emsp;**Date:** September 18, 2025  
+#### **Event Overview and Key Activities**  
+The AWS Cloud Day Vietnam - AI Edition 2025 served as a pivotal forum designed to accelerate Vietnam's digital transformation, harnessing the power of Cloud Computing and Artificial Intelligence. The event explored four core themes:  
+- Democratizing Generative AI for Enterprises
+- Bridging the Gap Between Business and IT in Finance  
+- Accelerating Industry Modernization  
+- Enhancing Security Frameworks
 
-&emsp;**Location:** 2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City  
+The day’s activities featured high-level plenary sessions with government officials and industry leaders, followed by in-depth technical tracks focused on *Data Strategy*, *DevOps*, and *Cloud Migration Pathways*.
 
-&emsp;**Role in the Event:** Participant  
+#### **Key Takeaways and Outcomes**  
+- **Strategic Insights**: Gained a deeper understanding of the critical interplay between Generative AI and a robust data strategy, identified as the key driver for success in modern enterprises.  
+- **Migration to Operate Mindset**: Developed an appreciation for the *"Migrate to Operate"* framework, which emphasizes using AI to streamline operations and optimize costs post-cloud migration.  
+- **Technical Knowledge**: Acquired insights into the integration of Generative AI within the DevOps lifecycle, particularly in automating code generation and testing.  
+- **Security Innovations**: Learned about the *"Security by Design"* approach, which focuses on embedding security measures throughout the application lifecycle rather than relying solely on perimeter defenses.
 
-&emsp;**Brief Description of the Event and Main Activities:**  
-&emsp;Vietnam Cloud Day is an annual event organized by AWS, bringing together experts, businesses, and the tech community to share insights on emerging trends in cloud computing, AI, big data, and cybersecurity.  
-&emsp;The event features in-depth discussions, hands-on technical workshops, live demonstrations of modern cloud solutions, and opportunities to network and exchange practical experiences.  
-
-&emsp;**Outcomes or Achievements (Lessons Learned, New Skills, Contributions to Team/Project):**  
-&emsp;- Gained deeper understanding of core AWS services (EC2, S3, Lambda, RDS, etc.)  
-&emsp;- Learned about the latest trends in AI and Cloud adoption in enterprises  
-&emsp;- Improved ability to learn new technologies and design systems on cloud platforms  
-&emsp;- Expanded professional network with engineers and experts in the Cloud Computing field  
-
+This event provided invaluable knowledge and practical takeaways, further enhancing my understanding of the intersection between AI, cloud computing, and security in the context of modern enterprise solutions.
 
 ---
 

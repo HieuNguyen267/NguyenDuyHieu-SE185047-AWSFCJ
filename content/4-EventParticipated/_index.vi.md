@@ -1,34 +1,34 @@
 ---
-title: "Các events đã tham gia"
-date: 2025-01-01
+title: "Các sự kiện đã tham gia"
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
+### [Sự kiện 1](4.1-Event1/)  
+**Tên sự kiện:** AWS Cloud Day Vietnam - AI Edition 2025  
+**Ngày:** 18 tháng 9 năm 2025  
+**Địa điểm:** Số 2 đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh  
+**Vai trò tham dự:** Người tham dự  
 
+#### **Tổng quan sự kiện và Hoạt động chính**  
+Sự kiện AWS Cloud Day Vietnam - AI Edition 2025 đóng vai trò là diễn đàn then chốt nhằm thúc đẩy quá trình chuyển đổi số tại Việt Nam, khai thác sức mạnh của Điện toán đám mây và Trí tuệ nhân tạo. Sự kiện tập trung khai thác bốn chủ đề cốt lõi:  
+- Phổ cập AI Tạo sinh cho Doanh nghiệp
+- Thu hẹp khoảng cách giữa Kinh doanh và CNTT trong Tài chính  
+- Thúc đẩy hiện đại hóa ngành công nghiệp  
+- Tăng cường các khuôn khổ bảo mật
 
-### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** Vietnam Cloud Day 2025  
+Các hoạt động trong ngày bao gồm các phiên họp toàn thể cấp cao với sự tham gia của các quan chức chính phủ và lãnh đạo ngành, tiếp theo là các chuyên đề kỹ thuật chuyên sâu tập trung vào *Chiến lược dữ liệu*, *DevOps* và *Lộ trình di chuyển lên đám mây*.
 
-&emsp;**Thời gian tổ chức :** 18/9/2025
+#### **Bài học chính và Kết quả đạt được**  
+- **Thông tin chiến lược**: Hiểu sâu hơn về mối tương tác quan trọng giữa AI Tạo sinh và chiến lược dữ liệu vững chắc, được xác định là động lực chính dẫn đến thành công trong các doanh nghiệp hiện đại.  
+- **Tư duy "Di chuyển để Vận hành"**: Nắm bắt được khung tư duy *"Migrate to Operate"*, nhấn mạnh việc sử dụng AI để tinh giản quy trình vận hành và tối ưu hóa chi phí sau khi chuyển đổi lên đám mây.  
+- **Kiến thức kỹ thuật**: Tiếp thu kiến thức về việc tích hợp AI Tạo sinh vào vòng đời DevOps, đặc biệt là trong việc tự động hóa tạo mã và kiểm thử.  
+- **Đổi mới về bảo mật**: Tìm hiểu về phương pháp *"Bảo mật ngay từ thiết kế"* (Security by Design), tập trung vào việc nhúng các biện pháp bảo mật trong suốt vòng đời ứng dụng thay vì chỉ dựa vào các biện pháp phòng thủ lớp ngoài.
 
-&emsp;**Địa điểm:** 2 Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 
+Sự kiện này đã cung cấp những kiến thức vô giá và bài học thực tế, nâng cao hơn nữa sự hiểu biết của tôi về sự giao thoa giữa AI, điện toán đám mây và bảo mật trong bối cảnh các giải pháp doanh nghiệp hiện đại.
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự  
-
-&emsp;**Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện:**  
-&emsp;Vietnam Cloud Day là sự kiện thường niên do AWS tổ chức, quy tụ chuyên gia, doanh nghiệp và cộng đồng công nghệ để chia sẻ về các xu hướng mới trong điện toán đám mây, AI, dữ liệu lớn và bảo mật.  
-&emsp;Sự kiện bao gồm các phiên thảo luận chuyên sâu, hội thảo kỹ thuật (hands-on labs), phần trình diễn các giải pháp Cloud hiện đại và cơ hội giao lưu học hỏi kinh nghiệm thực tế.  
-
-&emsp;**Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án):**  
-&emsp;- Hiểu rõ hơn về các dịch vụ cốt lõi của AWS (EC2, S3, Lambda, RDS, v.v.)  
-&emsp;- Nắm bắt xu hướng ứng dụng AI và Cloud trong doanh nghiệp hiện nay  
-&emsp;- Rèn luyện kỹ năng học hỏi công nghệ mới và tư duy thiết kế hệ thống trên nền tảng đám mây  
-&emsp;- Mở rộng mối quan hệ với cộng đồng kỹ sư và chuyên gia trong lĩnh vực Cloud Computing  
-
-
-
+---
 
 ### [Event 2](4.2-Event2/)
 &emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
