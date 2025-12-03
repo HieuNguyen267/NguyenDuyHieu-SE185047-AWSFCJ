@@ -6,131 +6,29 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 ---
-# Giải pháp Nhà máy điện thông minh của TCS trên AWS giúp các tiện ích tối ưu hóa hoạt động và thúc đẩy chuyển đổi năng lượng như thế nào
+## [AWS Training and Certification Blog](https://aws.amazon.com/blogs/training-and-certification/)
 
-*Bởi Alakh Srivastava, Rajesh Natesan, Siva Thangavel và Yogesh Chaturvedi – ngày 19 tháng 3 năm 2025, trong chuyên mục Amazon DocumentDB, Amazon ECS, Amazon S3, AWS IoT Core, AWS Step Functions, Năng lượng (Dầu khí), Industries.*
+# **Các khóa học kỹ thuật số mới về bộ xử lý AWS Graviton**
 
----
+bởi Sophy Chen ngày 30 tháng 6 năm 2025 trong [Announcements](https://aws.amazon.com/blogs/training-and-certification/category/post-types/announcements/), [AWS Training and Certification](https://aws.amazon.com/blogs/training-and-certification/category/aws-training-and-certification/), [Graviton](https://aws.amazon.com/blogs/training-and-certification/category/compute/graviton/), [Permalink](https://aws.amazon.com/blogs/training-and-certification/new-digital-courses-about-aws-graviton-processors/).
 
-## Tổng quan về giải pháp
+Các bộ xử lý [AWS Graviton](https://aws.amazon.com/ec2/graviton/) được thiết kế chuyên biệt nhằm mang lại tỷ lệ hiệu năng trên chi phí tốt nhất cho các khối lượng công việc đám mây chạy trên dịch vụ [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/). Các khách hàng áp dụng Graviton đã đạt được hiệu năng trên chi phí cao hơn đến 40%, đồng thời tiêu thụ ít hơn đến 60% năng lượng so với các phiên bản tương đương. Thông qua loạt khóa học mới này, bạn sẽ học cách tận dụng Graviton để nâng cao cả hiệu năng ứng dụng lẫn lợi nhuận của doanh nghiệp của bạn.
 
-Các công nghệ kỹ thuật số tiên tiến đang cách mạng hóa ngành năng lượng, cho phép các tổ chức đạt được các mục tiêu bền vững đồng thời giảm chi phí và khí thải carbon.  
-Theo McKinsey, chuyển đổi kỹ thuật số trong lĩnh vực năng lượng có thể mở ra **1,6 nghìn tỷ USD giá trị** vào năm 2035, giúp giảm **20–30% chi phí vận hành** và **5% lượng khí thải carbon**.
+Loạt khóa học này gồm ba khóa học được thiết kế để bao quát cả các kiến thức nền tảng lẫn các chủ đề trung cấp như di chuyển và tối ưu hóa. Bất kể bạn là người ra quyết định, nhà phát triển, kiến trúc sư đám mây, chuyên viên vận hành đám mây, kỹ sư DevOps hay kỹ sư nền tảng, các khóa học này đều được xây dựng nhằm giúp bạn hiểu và tận dụng Graviton cho doanh nghiệp của mình.
 
-Khi ngành công nghiệp tiến tới mô hình phát điện phân tán tích hợp năng lượng tái tạo, các doanh nghiệp cần những giải pháp thông minh như **lưới điện số, AI điều phối năng lượng**, và **nền tảng giám sát thời gian thực**.  
+## **Chi tiết các khóa học**
 
-Giải pháp **Nhà máy điện thông minh (Smart Power Plant) của TCS** ra đời để đáp ứng điều đó — mang lại hiệu suất tăng 0,5%, giảm 8% NOx, và cải thiện 8–10% độ chính xác dự báo phát điện tái tạo.  
-Được xây dựng trên nền tảng **AWS**, giải pháp này tận dụng sức mạnh của **AI/ML** để xử lý dữ liệu thời gian thực từ hàng nghìn cảm biến năng lượng trên nhiều địa điểm.
+**Trình độ cơ bản:**
 
-> *Bài viết này trình bày cách TCS và AWS cùng hợp tác mang lại hiệu quả vận hành vượt trội và kết quả kinh doanh bền vững cho ngành năng lượng.*
+* [Kiến thức nền tảng về bộ xử lý AWS Graviton (30 phút)](https://skillbuilder.aws/search?searchText=aws-graviton-processors-fundamentals&showRedirectNotFoundBanner=true): Tìm hiểu các khái niệm kỹ thuật và lợi ích của bộ xử lý AWS Graviton, cũng như các tài nguyên và hỗ trợ để áp dụng. Bạn cũng sẽ khám phá các phiên bản Amazon EC2 sử dụng bộ xử lý Graviton nhằm đáp ứng nhiều nhu cầu khối lượng công việc khác nhau, mang lại lợi ích đáng kể về tỷ lệ giá thành/hiệu năng và khả năng AI được nâng cao.
 
----
+**Trình độ trung cấp:**
 
-## Kiến trúc giải pháp và luồng dữ liệu
+* [Di chuyển sang AWS Graviton (2,5 giờ)](https://skillbuilder.aws/search?searchText=migrating-to-aws-graviton&showRedirectNotFoundBanner=true): Tìm hiểu cách đánh giá khả năng tương thích của ứng dụng với AWS Graviton, xây dựng chiến lược di chuyển toàn diện và sử dụng các công cụ để đánh giá mức độ sẵn sàng cho việc di chuyển. Bạn sẽ hiểu sâu hơn về cách cả các ngôn ngữ thông dịch và ngôn ngữ biên dịch vận hành trên Graviton, bao gồm các hành vi độc đáo và kỹ thuật tối ưu hóa của chúng. Bạn cũng sẽ khám phá sự khác biệt giữa các chiến lược biên dịch nguyên bản, biên dịch chéo và biên dịch mô phỏng, đồng thời học cách áp dụng chúng hiệu quả. Cuối cùng, bạn sẽ hiểu và xây dựng các image container đa kiến trúc, triển khai chúng trên hạ tầng dựa trên AWS Graviton, và tối ưu hóa các khối lượng công việc dạng container với AWS Graviton.
 
-Kiến trúc của giải pháp được thiết kế theo luồng dữ liệu khép kín, tận dụng các dịch vụ AWS để quản lý, xử lý và phân tích thông tin một cách toàn diện.
+* [Tối ưu hóa với AWS Graviton (40 phút)](https://skillbuilder.aws/search?searchText=optimization-with-aws-graviton&showRedirectNotFoundBanner=true): Khám phá các kịch bản khác nhau trong đó AWS Graviton có thể mang lại những lợi thế đáng kể, và học cách tận dụng các số liệu hiệu năng cùng các phương pháp thiết lập đường cơ sở để tối ưu hóa. Thông qua các ví dụ thực tế và những thực tiễn tốt nhất, bạn sẽ có khả năng xây dựng các chiến lược tối ưu hóa hiệu quả và dễ dàng vượt qua những cạm bẫy thường gặp khi triển khai. Ngoài ra, khóa học sẽ hướng dẫn bạn tối ưu hóa các ứng dụng .NET Core và các khối lượng công việc Windows trên AWS Graviton.
 
-![Ảnh blog 3 - 1](/images/3-BlogImage/Blog3/blog3-1.jpg)
-> *Hình 1. Kiến trúc tổng thể của giải pháp Nhà máy điện thông minh trên AWS.*
+## **Bắt đầu**
 
-- **Nhập dữ liệu:** Thu thập dữ liệu từ OPC-UA (thiết bị công nghiệp), hệ thống lịch sử tại chỗ và hồ dữ liệu Amazon S3.  
-  Mỗi tổ máy có thể gửi tới 4.000 giá trị cảm biến mỗi phút.  
-- **Tiếp nhận và điều phối:** AWS IoT Core tiếp nhận luồng dữ liệu và kích hoạt **AWS Step Functions** để điều phối tự động.  
-- **Xử lý dữ liệu:** Các **AWS Lambda functions** thực hiện làm sạch, tính toán KPI và tạo cảnh báo.  
-- **Lưu trữ:** **Amazon DocumentDB** lưu dữ liệu có cấu trúc (KPI, cảnh báo), **Amazon S3** lưu dữ liệu cảm biến thô và kết quả huấn luyện.  
-- **Đào tạo mô hình ML:** Thực hiện trong **Amazon SageMaker**, mô hình được lưu trong **Amazon Elastic Container Registry (ECR)**.  
-- **Suy luận thời gian thực:** Mô hình được triển khai qua **Amazon ECS** cho TCS InTwin (engine phân tích online).  
-- **Triển khai ứng dụng:** Giao diện front-end/back-end chạy container trên **Amazon ECS** đảm bảo mở rộng linh hoạt.
+Hãy đăng ký các khóa học này ngay hôm nay và thực hiện bước đầu tiên hướng tới việc tối ưu hóa các khối lượng công việc trên đám mây của bạn với AWS Graviton. Chúc bạn học tập vui vẻ\!
 
----
-
-## Các chức năng chính
-
-Giải pháp Nhà máy điện thông minh của TCS mang đến bốn khả năng cốt lõi giúp thay đổi cách các nhà máy vận hành:
-
-![Ảnh blog 3 - 2](/images/3-BlogImage/Blog3/blog3-2.jpg)
-> *Hình 2. Bốn năng lực cốt lõi của giải pháp.*
-
-1. **Bản sao kỹ thuật số AI tự học (Self-learning Digital Twin):**  
-   Kết hợp dữ liệu thực và mô hình AI vật lý để liên tục thích nghi với điều kiện hoạt động, đảm bảo dự đoán chính xác và tiết kiệm chi phí.  
-
-2. **Giải pháp mở và có thể mở rộng:**  
-   Có thể tích hợp với hệ thống nhà máy hiện có hoặc mô hình AI riêng, kiến trúc mở và có khả năng giải thích.
-
-3. **Bàn làm việc kỹ thuật số low-code:**  
-   Cho phép tạo và quản lý mô hình AI nhanh chóng, hỗ trợ tạo KPI, FMEA và các use case cụ thể.  
-
-4. **Nền tảng dựng sẵn:**  
-   Các mô-đun có thể cấu hình sẵn cho từng nhà máy, giúp rút ngắn thời gian triển khai và mở rộng quy mô dễ dàng.
-
----
-
-## Các trường hợp sử dụng thực tế
-
-### Dự báo phát điện mặt trời  
-Sử dụng mô hình ML và phân tích nâng cao để dự đoán sản lượng năng lượng tái tạo.  
-Tại một trang trại gió ngoài khơi ở Anh, độ chính xác dự báo tăng **15,1%**, doanh thu tăng **6%**.  
-
-### Tối ưu hóa quá trình đốt cháy trong sản xuất nhiệt  
-Tại một nhà máy Nhật Bản, AI giúp cải thiện **0,5% hiệu suất**, giảm **8% NOx**, tiết kiệm **2,5 triệu USD/năm**.  
-
-### Bảo trì dự đoán linh kiện tuabin khí  
-Tại một nhà máy Úc, mô hình dự đoán hỏng hóc trước **8–12 tháng**, giảm 20% chi phí bảo trì và thời gian ngừng hoạt động.
-
----
-
-## Lợi ích kinh doanh
-
-Giải pháp của TCS giúp doanh nghiệp năng lượng:
-
-| Lợi ích | Tác động |
-| ------- | -------- |
-| **Giảm chi phí vận hành** | Cắt giảm tới 20% chi phí bảo trì và vận hành. |
-| **Dự đoán hỏng hóc chính xác** | Độ chính xác dự báo lỗi lên đến 85%. |
-| **Tối ưu hóa KPI và giảm khí thải** | Cải thiện hiệu suất đồng thời giảm phát thải carbon. |
-| **Hỗ trợ lực lượng lao động** | AI hỗ trợ ra quyết định, giảm phụ thuộc vào kinh nghiệm cá nhân. |
-
-Ngoài ra, việc tích hợp AWS giúp loại bỏ các silo dữ liệu, nâng cao năng suất và tạo nền tảng chuẩn hóa cho các nhà máy điện trong tương lai.
-
----
-
-## Kết luận
-
-**Giải pháp Nhà máy điện thông minh TCS trên AWS** đang định hình tương lai bền vững của ngành năng lượng.  
-Thông qua AI và phân tích nâng cao, nền tảng này giúp tối ưu hiệu suất, bảo trì dự đoán, và tích hợp liền mạch năng lượng tái tạo.
-
-TCS – với chuyên môn sâu và đội ngũ chuyên gia được AWS chứng nhận – đã chứng minh khả năng triển khai thành công trên nhiều loại hình nhà máy, từ nhiệt điện truyền thống đến năng lượng tái tạo quy mô lớn.
-
-> *Để tìm hiểu thêm, hãy xem bài đăng gốc của TCS về Giải pháp Nhà máy điện thông minh trên AWS.*
-
----
-
-## Giới thiệu về các tác giả
-
-> ![Ảnh blog 3 - 3](/images/3-BlogImage/Blog3/blog3-3.jpg)  
-> **Alakh Srivastava**  
-> *Giám đốc sản phẩm toàn cầu – Thực hành Nhà máy điện thông minh, TCS.*  
-> Hơn 20 năm kinh nghiệm trong chuyển đổi kỹ thuật số ngành điện, chuyên về năng lượng tái tạo, AI và IoT công nghiệp.
-
----
-
-> ![Ảnh blog 3 - 4](/images/3-BlogImage/Blog3/blog3-4.jpg)  
-> **Rajesh Natesan**  
-> *Trưởng nhóm Kỹ thuật chính – Nhóm Nhà máy điện thông minh, TCS.*  
-> 20 năm kinh nghiệm trong IoT, AI/ML và kiến trúc hệ thống năng lượng quy mô lớn.
-
----
-
-> ![Ảnh blog 3 - 5](/images/3-BlogImage/Blog3/blog3-5.jpg)  
-> **Siva Thangavel**  
-> *Kiến trúc sư giải pháp đối tác tại AWS.*  
-> Cung cấp giải pháp kiến trúc tối ưu cho đối tác và khách hàng doanh nghiệp trong nhiều ngành công nghiệp.
-
----
-
-> ![Ảnh blog 3 - 6](/images/3-BlogImage/Blog3/blog3-6.jpg)  
-> **Yogesh Chaturvedi**  
-> *Kiến trúc sư giải pháp chính tại AWS – lĩnh vực Năng lượng và Tiện ích.*  
-> Tập trung giúp khách hàng giải quyết thách thức bằng công nghệ đám mây. Ngoài công việc, anh yêu thích đi bộ đường dài, du lịch và thể thao.
-
----
