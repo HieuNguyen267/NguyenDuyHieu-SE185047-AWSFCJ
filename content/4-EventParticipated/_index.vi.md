@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-### [Sự kiện 1](4.1-Event1/)  
+### [Event 1](4.1-Event1/)  
 **Tên sự kiện:** AWS Cloud Day Vietnam - AI Edition 2025  
 **Ngày:** 18 tháng 9 năm 2025  
 **Địa điểm:** Số 2 đường Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh  
@@ -30,12 +30,23 @@ Sự kiện này đã cung cấp những kiến thức vô giá và bài học t
 
 ---
 
-### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+### [Event 2](4.2-Event2/) 
+**Tên sự kiện:** Discover Agentic AI – Amazon QuickSuite Workshop  
+**Ngày:** 07/11/2025  
+**Địa điểm:** Văn phòng AWS Việt Nam, Tháp Tài chính Bitexco, Quận 1, TP. Hồ Chí Minh  
+**Vai trò:** Người tham dự  
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+#### **Tổng quan Sự kiện và Các Hoạt động Chính** Workshop "Discover Agentic AI – Amazon QuickSuite", được tổ chức với sự hợp tác của Cloud Kinetics, đóng vai trò là một phiên kỹ thuật chiến lược đánh dấu sự chuyển mình từ AI Tạo sinh (Generative AI) thụ động sang **AI Tác tử (Agentic AI)** tự chủ. Sự kiện nổi bật với **buổi trình diễn trực tiếp (live demo) đầu tiên** của Amazon QuickSuite tại Việt Nam. Nội dung workshop tập trung vào bốn trụ cột chính:  
+- Định nghĩa mô hình "Agentic": Tự chủ (Autonomy), Suy luận (Reasoning) và Thực thi (Execution).
+- Tích hợp Dữ liệu và AI thông qua hệ sinh thái Amazon QuickSuite.
+- Thực hành xây dựng các khái niệm AI trực tiếp cùng các chuyên gia kỹ thuật AWS.
+- Hỗ trợ tài chính cho đổi mới sáng tạo thông qua Chương trình AWS LIFT.
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+Chương trình kết hợp giữa các phiên lý thuyết kiến trúc và các bài thực hành thực tế sử dụng *Amazon QuickSight* và *Quick Suite Q*, cho phép người tham dự xây dựng các mô hình AI chức năng ngay tại sự kiện.
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+#### **Bài học Chính và Kết quả** - **Chuyển đổi Mô hình (Paradigm Shift)**: Hiểu rõ sự chuyển dịch từ Generative AI (tạo nội dung) sang **Agentic AI** (thực thi tác vụ tự chủ), nơi các hệ thống có thể nhận thức môi trường và hành động độc lập để giải quyết vấn đề kinh doanh.  
+- **Hệ sinh thái Hợp nhất**: Có được cái nhìn thực tế về **Amazon QuickSuite**, học cách tích hợp trí tuệ doanh nghiệp (QuickSight) với năng lực tạo sinh để tạo ra các "Tác tử Phân tích" (Analyst Agents) giúp tinh gọn quy trình vận hành.  
+- **Linh hoạt trong Vận hành**: Nhận ra giá trị chiến lược của khung làm việc "Quick", nhấn mạnh vào việc triển khai nhanh và "Thời gian tạo ra Giá trị" (Time-to-Value), cho phép doanh nghiệp triển khai các giải pháp AI phức tạp với tốc độ cao.  
+- **Hỗ trợ Chiến lược**: Tìm hiểu về **Chương trình AWS LIFT** (cung cấp khoản tín dụng lên tới $80,000 USD), xác định đây là cơ chế quan trọng để giảm thiểu rủi ro cho R&D và tăng tốc việc áp dụng tính toán hiệu năng cao.
 
+Workshop này đã cung cấp một lộ trình cụ thể để xây dựng các hệ thống doanh nghiệp tự chủ, kết hợp kiến thức lý thuyết với kỹ năng kỹ thuật thực hành và thông tin tài chính chiến lược để thúc đẩy chuyển đổi số.

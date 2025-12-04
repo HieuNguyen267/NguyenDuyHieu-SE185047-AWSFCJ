@@ -30,11 +30,23 @@ This event provided invaluable knowledge and practical takeaways, further enhanc
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### [Event 2](4.2-Event2/) 
+**Event Name:** Discover Agentic AI – Amazon QuickSuite Workshop  
+**Date:** November 7, 2025  
+**Location:** AWS Vietnam Office, Bitexco Financial Tower, District 1, Ho Chi Minh City  
+**Role in the Event:** Participant  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+#### **Event Overview and Key Activities** The "Discover Agentic AI – Amazon QuickSuite Workshop," organized in collaboration with Cloud Kinetics, served as a strategic technical session marking the evolution from passive Generative AI to autonomous **Agentic AI**. The event featured the **first-ever live demonstration** of Amazon QuickSuite in Vietnam. The workshop focused on four key pillars:  
+- Defining the "Agentic" paradigm: Autonomy, Reasoning, and Execution.
+- Integrating Data and AI through the Amazon QuickSuite ecosystem.
+- Hands-on building of AI concepts with AWS technical experts.
+- Financial enablement for innovation through the AWS LIFT Program.
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+The agenda combined theoretical architectural sessions with practical, hands-on workshops using *Amazon QuickSight* and *Quick Suite Q*, allowing participants to build functional AI concepts in real-time.
 
-&emsp;**Role:** Attendee  
+#### **Key Takeaways and Outcomes** - **Paradigm Shift**: Gained a clear understanding of the transition from Generative AI (content creation) to **Agentic AI** (autonomous task execution), where systems can perceive environments and act independently to solve business problems.  
+- **Unified Ecosystem**: Acquired practical insights into **Amazon QuickSuite**, learning how to integrate business intelligence (QuickSight) with generative capabilities to create "Analyst Agents" that streamline operations.  
+- **Operational Agility**: Recognized the strategic value of the "Quick" framework, which emphasizes rapid deployment and "Time-to-Value," allowing enterprises to implement complex AI solutions with speed.  
+- **Strategic Enablement**: Learned about the **AWS LIFT Program** (offering up to $80,000 USD in credit), identifying it as a critical mechanism to de-risk R&D and accelerate the adoption of high-performance computing.
+
+This workshop provided a concrete roadmap for building autonomous enterprise systems, combining theoretical knowledge with hands-on technical skills and strategic financial insights to accelerate digital transformation.
