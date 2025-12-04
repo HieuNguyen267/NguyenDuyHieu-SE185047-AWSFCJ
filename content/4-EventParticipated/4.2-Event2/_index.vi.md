@@ -1,5 +1,5 @@
 ---
-title: "Khám Phá Agentic AI – Workshop Amazon QuickSuite"
+title: "Event 2"
 date: 2025-11-07
 weight: 1
 chapter: false
