@@ -3,7 +3,7 @@ title: "Sự kiện 2"
 date: 2025-11-07
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 4.2. </b> "
 ---
 
 # Báo cáo Tổng kết: Workshop “Khám Phá Agentic AI – Amazon QuickSuite”

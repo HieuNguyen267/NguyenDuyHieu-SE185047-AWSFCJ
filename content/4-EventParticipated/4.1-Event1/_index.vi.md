@@ -3,7 +3,7 @@ title: "Sự kiện 1"
 date: 2025-09-18
 weight: 1
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.1. </b> "
 ---
 # Báo cáo thu hoạch: “AWS Cloud Day Vietnam - AI Edition 2025”
 
