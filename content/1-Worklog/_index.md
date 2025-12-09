@@ -1,11 +1,10 @@
 ---
 title: "Worklog"
 date: 2025-09-08
-weight: 2
+weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
-
 
 
 
@@ -23,14 +22,14 @@ pre: " <b> 1. </b> "
 **Week 6:** [Scaling applications with Auto Scaling, ELB, and ECS/Fargate](1.6-week6/)
 
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 7:** [Setting up project infrastructure: repository, models, enums, utils, and CORS](1.7-week7/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 8:** [Implementing Cognito JWT authentication and Account service](1.8-week8/)
 
-**Week 9:** [Doing task I...](1.9-week9/)
+**Week 9:** [Configuring S3 upload service with presigned URLs](1.9-week9/)
 
-**Week 10:** [Doing task L...](1.10-week10/)
+**Week 10:** [Building Review service with rating aggregation](1.10-week10/)
 
-**Week 11:** [Doing task M...](1.11-week11/)
+**Week 11:** [Provisioning Lightsail instance and PostgreSQL database](1.11-week11/)
 
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 12:** [Deploying backend API and fixing post-deployment issues](1.12-week12/)
