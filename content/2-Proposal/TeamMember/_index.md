@@ -14,7 +14,7 @@ chapter: false
 
 &emsp; **Nguyễn Huy Hoàng** --- Front-End, Business Analysis --- Hoangnhse185092@fpt.edu.vn --- 0399578511
 
-&emsp; **Lưu Ngọc Ngân Giang** --- Front-End, Business Analysis --- luungocngangiang25@gmail.com --- 0937967352
+&emsp; **Lưu Ngọc Ngân Giang** --- Back-End, Business Analysis --- luungocngangiang25@gmail.com --- 0937967352
 
 &emsp; **Trần Hồ Phương Khanh** --- Front-End, Business Analysis --- khanhthpse185070@fpt.edu.vn --- 0854406820
 

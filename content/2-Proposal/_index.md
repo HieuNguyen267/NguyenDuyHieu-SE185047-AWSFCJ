@@ -1,12 +1,11 @@
 ---
-title: "Project Proposal"
-date: 2025-11-10
-weight: 1
+title: "Proposal"
+weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-# **Jewelry E-Commerce Platform**  
-## **Cloud-Based Online Sales System Using React, .NET, and MySQL on AWS Lightsail**  
+
+# Team T1 VN
 
 # ![A logo for a companyAI-generated content may be incorrect.][image1]
 
@@ -14,27 +13,27 @@ pre: " <b> 2. </b> "
 
 # 
 
-# T1VN – FPT University – Video Share
+# T1VN – FPT University – Jewelry Web Store
 
 # 03/12/2025
 
 # Table of Contents
 
-**[1 BACKGROUND AND MOTIVATION	3](#background-and-motivation)**
+[**1 BACKGROUND AND MOTIVATION	3**](#background-and-motivation)
 
 [1.1 EXECUTIVE SUMMARY	3](#executive-summary)
 
-[1.2 PROJECT SUCCESS CRITERIA	3](#heading=)
+1.2 PROJECT SUCCESS CRITERIA	3
 
-[1.3 ASSUMPTIONS	3](#heading=)
+1.3 ASSUMPTIONS	3
 
-[**2 SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM	4**](#heading=)
+**2 SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM	4**
 
 [2.1 TECHNICAL ARCHITECTURE DIAGRAM	4](#technical-architecture-diagram)
 
 [2.2 TECHNICAL PLAN	4](#technical-plan)
 
-[2.3 PROJECT PLAN	5](#heading=)
+2.3 PROJECT PLAN	5
 
 [2.4 SECURITY CONSIDERATIONS	5](#security-considerations)
 
@@ -54,13 +53,13 @@ pre: " <b> 2. </b> "
 
 [**7 ACCEPTANCE	11**](#acceptance)
 
-1. # **BACKGROUND AND MOTIVATION** 
+1. # **BACKGROUND AND MOTIVATION** {#background-and-motivation}
 
-   1. ## **EXECUTIVE SUMMARY**
+   1. ## **EXECUTIVE SUMMARY** {#executive-summary}
 
 The AWS Jewelry Web project entails the development of a comprehensive Jewelry E-commerce Platform. The system architecture comprises a backend and database infrastructure hosted on AWS Lightsail, coupled with a React-based frontend deployed via Amazon S3 and CloudFront. This architecture is designed to ensure scalability, high security, and operational cost optimization by leveraging essential yet highly effective Cloud services.
 
-**Hệ thống cung cấp các tính năng chính như:**
+**The system provides the following key features:**
 
 * Jewelry product management.  
 * Product image uploading capabilities.  
@@ -87,9 +86,9 @@ The AWS Jewelry Web project entails the development of a comprehensive Jewelry E
 
 2. # **SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM**
 
-   1. ## **TECHNICAL ARCHITECTURE DIAGRAM** 
+   1. ## **TECHNICAL ARCHITECTURE DIAGRAM** {#technical-architecture-diagram}
 
-   2. ## **TECHNICAL PLAN** 
+   2. ## **TECHNICAL PLAN** {#technical-plan}
 
 * **Frontend:** Hosted on Amazon S3 with Amazon CloudFront CDN and HTTPS enabled via AWS Certificate Manager (ACM).  
 * **Backend API:** .NET runtime environment on AWS Lightsail.  
@@ -103,16 +102,16 @@ The AWS Jewelry Web project entails the development of a comprehensive Jewelry E
 
 The implementation timeline is estimated to range from 6 to 12 weeks, contingent upon the final project scope.
 
-4. ## **SECURITY CONSIDERATIONS** 
+4. ## **SECURITY CONSIDERATIONS** {#security-considerations}
 
 * **Access Control:** S3 private access configured, granting read permissions exclusively to CloudFront.  
 * **Credential Management:** API utilizes private keys stored securely in AWS Secrets Manager.  
 * **Encryption:** Full system-wide HTTPS implementation.  
 * **Authentication Security:** User login protected by Amazon Cognito.
 
-3. # **ACTIVITIES AND DELIVERABLES** 
+3. # **ACTIVITIES AND DELIVERABLES** {#activities-and-deliverables}
 
-   1. ## **ACTIVITIES AND DELIVERABLES** 
+   1. ## **ACTIVITIES AND DELIVERABLES** {#activities-and-deliverables-1}
 
 | Project Phase | Timeline | Activities | Deliverables / Milestones | MD |
 | :---: | :---: | ----- | ----- | :---: |
@@ -127,7 +126,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 
 ## 
 
-2. ## **OUT OF SCOPE** 
+2. ## **OUT OF SCOPE** {#out-of-scope}
 
 * AI/Machine Learning features.  
 * Complex E-commerce functionalities.  
@@ -136,7 +135,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 * Complex administrative systems.  
 * Integration with third-party systems.
 
-  3. ## **PATH TO PRODUCTION**
+  3. ## **PATH TO PRODUCTION** {#path-to-production}
 
 * Operational Excellence Optimization.  
 * Secrets Management – Production Hardening.  
@@ -145,7 +144,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 * Disaster Recovery Plan.  
 * Production Handover.
 
-4. # **EXPECTED AWS COST BREAKDOWN BY SERVICES** 
+4. # **EXPECTED AWS COST BREAKDOWN BY SERVICES** {#expected-aws-cost-breakdown-by-services}
 
 | Service Name | Upfront cost | Monthly cost | Region |
 | :---- | :---- | :---- | :---- |
@@ -159,7 +158,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 | Amazon CloudWatch | 0.00 USD | 0.30 USD | Asia Pacific (Singapore) |
 | AWS Lightsail – API Server | 0.00 USD | 5 \- 10 USD | Asia Pacific (Singapore) |
 
-5. # **TEAM** 
+5. # **TEAM** {#team}
 
 **Partner Executive Sponsor**
 
@@ -189,12 +188,13 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 | :---- | :---- | :---- | :---- |
 |  |  |  |  |
 
-6. # **RESOURCES & COST ESTIMATES** 
+6. # **RESOURCES & COST ESTIMATES** {#resources-&-cost-estimates}
+
 | Resource | Responsibility | Rate (USD) / Hour |
 | :---- | :---- | ----- |
-| Solution Architects \[number of assigned headcount\] | \- Thiết kế kiến trúc AWS (S3, CloudFront, Lightsail, ACM, Route 53, Secrets Manager) \- Tư vấn bảo mật & tối ưu chi phí \- Review triển khai & best practices | 12 |
-| Engineers \[number of assigned headcount\] | \- Triển khai hạ tầng: S3, CloudFront, Route 53, ACM, Lightsail \- Cấu hình CI/CD, upload FE lên S3 \- Triển khai Node.js API trên Lightsail \- Cấu hình Secrets Manager, logging và CloudWatch | 6 |
-| Other (Please specify) | \- Kiểm thử hệ thống sau triển khai \- Tư vấn hỗ trợ khách hàng | 0 |
+| Solution Architects \[number of assigned headcount\] | \- Design and architect the AWS infrastructure ecosystem, incorporating services such as S3, CloudFront, Lightsail, ACM, Route 53, and Secrets Manager. \- Provide strategic consultancy regarding security protocols and operational cost optimization. \- Conduct comprehensive reviews of deployment procedures to ensure adherence to industry best practices. | 12 |
+| Engineers \[number of assigned headcount\] | \- Execute the provisioning and deployment of core infrastructure components, including S3, CloudFront, Route 53, ACM, and Lightsail. \- Establish Continuous Integration/Continuous Deployment (CI/CD) pipelines and facilitate the deployment of frontend assets to Amazon S3. \- Deploy and configure the Node.js API runtime environment within the AWS Lightsail infrastructure. \- Configure secure credential management via AWS Secrets Manager and establish logging mechanisms using Amazon CloudWatch. | 6 |
+| Other (Please specify) | \- Perform rigorous post-deployment system verification and integration testing. \- Deliver ongoing technical consultation and dedicated client support services. | 0 |
 
 \* Note: Refer to section “activities & deliverables” for the list of project phases
 
@@ -207,6 +207,20 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 | Total Hours | 4 | 12 |  | 15 |
 | Total Cost |  |  |  |  |
 
+You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=0aa6cc498679d07be48d17c07bceeb27fb695a97). 
+
+| Service Name | Upfront Cost | Monthly Cost | Description | Region | Config Summary |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| AWS Secrets Manager | 0.00 USD | 0.13 USD | DB Password Management | Asia Pacific (Singapore) | Number of secrets (1), Average duration of each secret (10 days), Number of API calls (1 per month) |
+| AWS Certificate Manager | 15.00 USD | 0.00 USD | SSL Certificate | Asia Pacific (Singapore) | Number of fully qualified domain names (FQDNs) (1) |
+| Amazon S3 | 0.00 USD | 0.03 USD | Host React \+ Image Storage | Asia Pacific (Singapore) | S3 Standard storage (1 GB/mo), Data Transfer In/Out (0 TB/mo) |
+| Amazon Route 53 | 0.00 USD | 3.50 USD | Domain Management | Asia Pacific (Singapore) | Hosted Zones (1) |
+| Amazon Lightsail | 0.00 USD | 3.20 USD | API \+ Database Server | Asia Pacific (Singapore) | 1 Bundle, Storage (100GB), Data Transfer (250GB), Additional storage (8 GB) |
+| Amazon Cognito | 0.00 USD | 0.05 USD | User Login/Auth | Asia Pacific (Singapore) | MAU (1), Advanced security features (Enabled) |
+| Amazon CloudWatch | 0.00 USD | 0.30 USD | API Logging | Asia Pacific (Singapore) | Metrics requested (1), Widget Image (1), Other API requests (1), Custom Metrics (1) |
+| Amazon CloudFront | 0.00 USD | 0.00 USD | Frontend CDN | Asia Pacific (Singapore) | Free Plan (1) |
+| TOTAL | 15.00 USD | \~7.21 USD |  |  |  |
+
 Cost Contribution distribution between Partner, Customer, AWS:
 
 | Party | Contribution (USD) | % Contribution of Total |
@@ -215,9 +229,9 @@ Cost Contribution distribution between Partner, Customer, AWS:
 | Partner |  |  |
 | AWS |  |  |
 
-7. # **ACCEPTANCE** 
+7. # **ACCEPTANCE** {#acceptance}
 
-Project is complete when:
+Project is complete when: 09/12/2025
 
 Website runs stably on real domain.
 
@@ -229,6 +243,6 @@ CloudWatch log & Cognito login works.
 
 Accepted by customer/stakeholder.
 
- 
+ ## File TEMPLETE DOCX: [DOWLOAD Proposal (DOCX)](https://drive.google.com/drive/folders/1TLXOU4XDvSqv1hfWYhXhWilc5G53iN2H?usp=sharing)
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALsAAABZCAMAAABRwqXRAAADAFBMVEUnNULg4uT///+kqrBUX2nb3d9JVWDJzND3+PhYYmzz9PSfpav+/v4oNkM6R1MyP0zc3uCaoafAw8j9/f0xP0s9SVUuPEmjqK0wPUne4OLQ09b5+vpLV2IzQEz4+PjX2dz4+PlKVWA2Q0+lqq9VYGr29/jv8PD09fU7R1RqdHySmaCgp62Plp0wPUqlq7E0QU0sOkf7+/tibHbX2tw0Qk7k5uepr7QsOUaCipF0fYWNlJtCTll3gIiutLhfaXNqc3zv8PF+h46+wsb8/Pzy8/Pw8fJFUV2AiJC5vsMvPUk3RE/b3N87SFQqOEV6goqFjpW4vMHa3d8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjz+kyAAADEElEQVR4Xu2YSYvWQBCG+2sVFBfQ24C44IAyqIiHQRwVEVwO/nBP/gFB0Is3vYkXW1NLV2+pTjLkiwfrQdOdt3p5u7oT8+mcYRiGYRiGYRiGYRiGYRj/L7ta2CtnayHHwyXUagU02v2u1S3oZAqdIwFvcBEg0mpQKdoMo/0Z9GaxmdIGG+JM06TJF9Lv2I/28CEEj6fh3NQgnbwzlOmYbzlGMe1Fjoa8Z7p3ASrciAIcg7LtnvDnf1KpxJGptcXRL9DNpSwwTsjsBP6DSggXYbJhQeGKNICF5cjtLyrq+FK8xzn5etVhha6eVAF2MQlD7RrEqT1L5D+qBdVgLNZCovueGeNHLXT53pu7xGvnR6U3NGRVclENTGo4aHMPiMR75GD3qQ4lPAuY/9RzEOMMUfUHcA3XY5MlsPXozfsbNGUxbd4iPfkizOZmqsqE6L2bXQ2ZX7yzb6jcys0l86f2njf3lJ3oXUed43ZzTFzW+muu4m6rAy2lGqiTBjXwpRZoJfTaO3TuTh47zG9OQfEah3fq3XTXvEcFTU/cq4WBz859yu/P5DeJImVHR4XYSecQKkZXzWvcj5uVnkSpZRWJYFmc9+HywPPhxZLEh1SwNhSPIM4daWxuKud9qXeZC3gclTxUtsH7yrv4oxIronOMeube43XSu/5vE+wUdILPjo91MIMGbp9rJPCi6CZVuRuE6YMhyk/cByiOh+J4942bKoP3iOl8epmFkxMqnz1/wQrlXPw1eXf+Zco7Rjin3EX6KqlFerH1aLyz51dj3ulvNKYb1COrQt7jTnDJW1N4z9pwV2lY8TrF94t4r3SVN7Nb7ou3mCE355dMxfxV7od3cXu39q7NNv9rmlqCh4C/tbdD877APOG3967uWVjyyM1uuCr6rHgS9HAGt1q2TyugfxPgxwCfY51/ZBvpJpYtef++1CN8quC3x9LHYw3UZ5Xprg0hz+R922e1c2aQ/L8cx5Bsb5/2ybwTiv/G77Z5n+d91H3jfGvv6zI3E+swkk/DMAzDMAzDMAzDMAzDMIy98Bd/3X8VdiiuqAAAAABJRU5ErkJggg==>
