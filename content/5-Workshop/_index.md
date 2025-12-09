@@ -1,144 +1,37 @@
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo ---   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo --- ) 
-) 
 ---
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo title: "Workshop"   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo title: "Workshop" ) 
-) 
 title: "Workshop"
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo date: 2025-01-01   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo date: 2025-01-01 ) 
-) 
-date: 2025-01-01T00:00:00Z
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo weight: 5   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo weight: 5 ) 
-) 
 weight: 5
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo chapter: false   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo chapter: false ) 
-) 
 chapter: false
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo pre: " <b> 5. </b> "   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo pre: " <b> 5. </b> " ) 
-) 
-pre: " <b> 5. </b> "
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo ---   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo --- ) 
-) 
+pre: "<b>5. </b>"
 ---
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo {{% notice warning %}}   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo {{% notice warning %}} ) 
-) 
-{{% notice warning %}}
+# AWS Jewelry Web Workshop
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning. ) 
-) 
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+![Architecture](/images/5-Workshop/architecture.png)
+<p align="center"><em>Figure: Simplified AWS Jewelry Web architecture (CloudFront + S3, Lightsail API/DB, Cognito, Secrets, CloudWatch).</em></p>
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo {{% /notice %}}   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo {{% /notice %}} ) 
-) 
-{{% /notice %}}
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo # Secure Hybrid Access to S3 using VPC Endpoints   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo # Secure Hybrid Access to S3 using VPC Endpoints ) 
-) 
-# Secure Hybrid Access to S3 using VPC Endpoints
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo #### Overview   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo #### Overview ) 
-) 
 #### Overview
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo **AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo **AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet. ) 
-) 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This workshop documents the AWS Jewelry Web project: a secure, cost-aware jewelry e-commerce stack using AWS managed services.
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet. ) 
-) 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+- **Frontend**: React SPA on **S3 + CloudFront** with ACM TLS and Route 53 domain.
+- **Backend**: **Lightsail** instance running Node.js API; **Lightsail MySQL/Postgres** for data.
+- **Identity**: **Amazon Cognito** User Pool for signup/login and JWT verification on the API.
+- **Media**: Private **S3** bucket for product images; uploads via **presigned PUT**; CloudFront reads objects.
+- **Secrets & Observability**: **AWS Secrets Manager** for DB password and bucket config; **CloudWatch Logs** for API/business events.
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location ) 
-) 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
+Design goals:
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo + **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo + **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables. ) 
-) 
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
+- Page load <2s globally via CloudFront.
+- Stable API under expected traffic (<100k req/month).
+- Secure DB operations; no hardcoded secrets (Secrets Manager only).
+- Secure uploads; complete API logging for operations and basic analytics.
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo + **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo + **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS. ) 
-) 
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+#### Content Map
 
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo #### Content   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo #### Content ) 
-) 
-#### Content
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo 1. [Workshop overview](5.1-Workshop-overview)   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 1. [Workshop overview](5.1-Workshop-overview) ) 
-) 
-1. [Workshop overview](5.1-Workshop-overview)
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo 2. [Prerequiste](5.2-Prerequiste/)   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 2. [Prerequiste](5.2-Prerequiste/) ) 
-) 
-2. [Prerequiste](5.2-Prerequiste/)
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo 3. [Access S3 from VPC](5.3-S3-vpc/)   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 3. [Access S3 from VPC](5.3-S3-vpc/) ) 
-) 
-3. [Access S3 from VPC](5.3-S3-vpc/)
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo 4. [Access S3 from On-premises](5.4-S3-onprem/)   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 4. [Access S3 from On-premises](5.4-S3-onprem/) ) 
-) 
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo 5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 5. [VPC Endpoint Policies (Bonus)](5.5-Policy/) ) 
-) 
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-
-E:\thuctap\report mau\fcj-workshop-template-main>(
-echo 6. [Clean up](5.6-Cleanup/)   | findstr /R "^date:"  1>nul  
- if not errorlevel 1 (echo date: 2025-01-01T00:00:00Z )  else (echo 6. [Clean up](5.6-Cleanup/) ) 
-) 
-6. [Clean up](5.6-Cleanup/)
+1. **[5.1. Objectives & Scope](5.1-objectives--scope/)**  
+2. **[5.2. Architecture Walkthrough](5.2-architecture-walkthrough/)**  
+3. **[5.3. Implementing Clickstream Ingestion](5.3-implementing-clickstream-ingestion/)**  
+4. **[5.4. Building the Private Analytics Layer](5.4-building-private-analytics-layer/)**  
+5. **[5.5. Visualizing Analytics with Shiny Dashboards](5.5-visualizing-analytics-with-shiny-dashboards/)**  
+6. **[5.6. Summary & Clean up](5.6-summary-cleanup/)**
