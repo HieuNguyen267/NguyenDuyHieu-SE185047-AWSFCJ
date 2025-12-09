@@ -39,13 +39,7 @@ Dự án xây dựng nền tảng thương mại điện tử trang sức. Kiế
 ## 2. Kiến trúc giải pháp
 
 ### 2.1 Sơ đồ kiến trúc
-Frontend: S3 + CloudFront + ACM + Route 53.  
-Backend: API .NET trên Lightsail.  
-DB: Lightsail MySQL/Postgres.  
-Auth: Cognito User Pool.  
-Media: S3 (presigned upload).  
-Log: CloudWatch.  
-Secrets: AWS Secrets Manager.
+![alt text](../../static/images/2-Proposal/JewelryDiagram.png)
 
 ### 2.2 Kế hoạch kỹ thuật
 - Thiết lập S3 hosting + CloudFront, cấu hình HTTPS/ACM, ánh xạ domain Route 53.

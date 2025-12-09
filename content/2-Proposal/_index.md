@@ -87,6 +87,7 @@ The AWS Jewelry Web project entails the development of a comprehensive Jewelry E
 2. # **SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM**
 
    1. ## **TECHNICAL ARCHITECTURE DIAGRAM** {#technical-architecture-diagram}
+   ![alt text](../../static/images/2-Proposal/JewelryDiagram.png)
 
    2. ## **TECHNICAL PLAN** {#technical-plan}
 
