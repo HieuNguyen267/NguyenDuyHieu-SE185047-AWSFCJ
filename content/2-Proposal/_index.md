@@ -7,7 +7,6 @@ pre: " <b> 2. </b> "
 
 # Team T1 VN
 
-# ![A logo for a companyAI-generated content may be incorrect.][image1]
 
 # AWS First Cloud AI Journey – **Project Plan**
 
