@@ -1,36 +1,45 @@
 ---
-title: "Self-Assessment"
+title: "Self-Evaluation"
 date: 2025-01-01
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
+During my internship at **Amazon Web Services (AWS)** from **08/09/2025** to **05/12/2025**, I had the opportunity to learn, practice, and apply the knowledge I acquired at university in a real working environment.  
 
-During my internship at **[Amazon Web Services]** from **[8/9/2025]** to **[28/11/2025]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+I participated in the **Batch-based Clickstream Analytics Platform** project for an e-commerce website selling computer products, with the main responsibilities as follows:
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+- Researching and working with AWS services such as **Amazon S3, AWS Lambda, Amazon EventBridge, Amazon EC2, AWS Amplify, Amazon Cognito** to support the collection and processing of clickstream data.  
+- Supporting the construction of a **batch-based pipeline for collecting, storing, and processing clickstream data**, in which user behaviour data on the website is captured, written to S3, and processed periodically by Lambda/EventBridge before being loaded into the analytics system.  
+- Taking part in **configuring the infrastructure on AWS**, connecting to **PostgreSQL/Supabase** and integrating with the **frontend application (Next.js)** of the e-commerce website.  
+- Writing **technical documentation and progress reports**, and communicating regularly with my mentor and team to update status and align on implementation directions.  
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Through this, I have clearly improved my skills in **programming, system design, working with cloud services, building batch data pipelines, technical writing, teamwork, and communication in a professional environment**.  
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+In terms of work attitude, I always tried to complete the tasks assigned, followed the team’s working processes, and proactively communicated when facing difficulties to ensure the quality of my work.
 
-### Needs Improvement
+To objectively reflect my internship, I would like to provide the following self-evaluation based on several criteria:
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+| No. | Criteria                                 | Description                                                                                      | Good | Fair | Average |
+| --- | ---------------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | -------- |
+| 1   | **Professional knowledge and skills**    | Understanding of the field, ability to apply knowledge in practice, tool usage, work quality    | ✅    | ☐    | ☐        |
+| 2   | **Ability to learn**                     | Ability to absorb new knowledge, learn quickly                                                  | ☐    | ✅    | ☐        |
+| 3   | **Proactiveness**                        | Willingness to research and take on tasks without waiting for detailed instructions             | ☐    | ✅    | ☐        |
+| 4   | **Sense of responsibility**              | Completing work on time and ensuring quality                                                    | ✅    | ☐    | ☐        |
+| 5   | **Discipline**                           | Compliance with working hours, rules, and processes                                             | ☐    | ✅    | ☐        |
+| 6   | **Desire for self-improvement**          | Willingness to receive feedback and improve oneself                                             | ☐    | ✅    | ☐        |
+| 7   | **Communication**                        | Presenting ideas and reporting work clearly                                                     | ☐    | ✅    | ☐        |
+| 8   | **Teamwork**                             | Working effectively with colleagues and participating in team activities                        | ✅    | ☐    | ☐        |
+| 9   | **Professional conduct**                 | Showing respect toward colleagues, partners, and the workplace                                  | ✅    | ☐    | ☐        |
+| 10  | **Problem-solving mindset**              | Identifying problems, proposing solutions, and being creative                                   | ☐    | ✅    | ☐        |
+| 11  | **Contribution to project/organization** | Work effectiveness, improvement initiatives, and recognition from the team                      | ☐    | ✅    | ☐        |
+| 12  | **Overall performance**                  | Overall evaluation of the entire internship period                                              | ☐    | ✅    | ☐        |
+
+### Areas for Improvement
+
+- Strengthen my **discipline** and **time management skills**, strictly following rules and deadlines in any working environment.  
+- Further develop my **problem-solving mindset**, especially in analyzing root causes and comparing multiple options before choosing a solution.  
+- Improve my **communication skills**: present more concisely and clearly in meetings, and proactively share difficulties/questions with my mentor and team members.  
+
+Overall, I consider this internship at AWS a very meaningful experience that helped me grow both in **technical capability** and **work attitude**, and also made me more aware of the areas I need to continue improving in the future.

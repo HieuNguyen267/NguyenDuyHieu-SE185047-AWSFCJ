@@ -1,6 +1,6 @@
 ---
 title: "Building the Private Analytics Layer"
-weight: 54
+weight: 2
 chapter: false
 pre: " <b> 5.4. </b> "
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Visualizing Analytics with Shiny Dashboards"
-weight: 55
+weight: 2
 chapter: false
 pre: " <b> 5.5. </b> "
 ---

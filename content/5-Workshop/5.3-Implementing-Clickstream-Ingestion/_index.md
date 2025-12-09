@@ -1,6 +1,6 @@
 ---
 title: "Implementing Clickstream Ingestion"
-weight: 53
+weight: 2
 chapter: false
 pre: " <b> 5.3. </b> "
 ---
