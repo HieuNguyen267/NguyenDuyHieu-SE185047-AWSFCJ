@@ -16,23 +16,21 @@ pre: " <b> 2. </b> "
 
 # 03/12/2025
 
-# Table of Contents
-
-[**1 BACKGROUND AND MOTIVATION	3**](#background-and-motivation)
+**[1 BACKGROUND AND MOTIVATION	3](#background-and-motivation)**
 
 [1.1 EXECUTIVE SUMMARY	3](#executive-summary)
 
-1.2 PROJECT SUCCESS CRITERIA	3
+[1.2 PROJECT SUCCESS CRITERIA	3](#heading=)
 
-1.3 ASSUMPTIONS	3
+[1.3 ASSUMPTIONS	3](#heading=)
 
-**2 SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM	4**
+[**2 SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM	4**](#heading=)
 
 [2.1 TECHNICAL ARCHITECTURE DIAGRAM	4](#technical-architecture-diagram)
 
 [2.2 TECHNICAL PLAN	4](#technical-plan)
 
-2.3 PROJECT PLAN	5
+[2.3 PROJECT PLAN	5](#heading=)
 
 [2.4 SECURITY CONSIDERATIONS	5](#security-considerations)
 
@@ -52,10 +50,9 @@ pre: " <b> 2. </b> "
 
 [**7 ACCEPTANCE	11**](#acceptance)
 
-1. # **BACKGROUND AND MOTIVATION** {#background-and-motivation}
+# **BACKGROUND AND MOTIVATION** 
 
-   1. ## **EXECUTIVE SUMMARY** {#executive-summary}
-
+## 1. **EXECUTIVE SUMMARY**
 The AWS Jewelry Web project entails the development of a comprehensive Jewelry E-commerce Platform. The system architecture comprises a backend and database infrastructure hosted on AWS Lightsail, coupled with a React-based frontend deployed via Amazon S3 and CloudFront. This architecture is designed to ensure scalability, high security, and operational cost optimization by leveraging essential yet highly effective Cloud services.
 
 **The system provides the following key features:**
@@ -67,7 +64,7 @@ The AWS Jewelry Web project entails the development of a comprehensive Jewelry E
 * Backend API operations on Lightsail with MySQL/Postgres data storage.  
 * Content delivery acceleration and international standard SSL processing via CDN.
 
-  2. ## **PROJECT SUCCESS CRITERIA**
+## 2.**PROJECT SUCCESS CRITERIA**
 
 * **Performance:** Website load time under 2 seconds for international access, facilitated by CloudFront CDN.  
 * **Stability:** Backend operates stably on Lightsail under actual traffic conditions.  
@@ -76,19 +73,19 @@ The AWS Jewelry Web project entails the development of a comprehensive Jewelry E
 * **Security:** Secure image uploading processes via Amazon S3.  
 * **Monitoring:** Comprehensive API logging through Amazon CloudWatch.
 
-  3. ## **ASSUMPTIONS**
+## 3.**ASSUMPTIONS**
 
 * **Traffic Volume:** Moderate traffic levels (less than 100,000 requests/month).  
 * **Scaling:** No requirement for advanced autoscaling configurations.  
 * **Domain:** Domain name is pre-acquired or will be purchased via Amazon Route 53\.  
 * **Competency:** The development team possesses proficiency in Node.js and React.
 
-2. # **SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM**
+ # 2.**SOLUTION ARCHITECTURE / ARCHITECTURAL DIAGRAM**
 
-   1. ## **TECHNICAL ARCHITECTURE DIAGRAM** {#technical-architecture-diagram}
+   ##  2.1.**TECHNICAL ARCHITECTURE DIAGRAM** 
    ![alt text](../../static/images/2-Proposal/JewelryDiagram.png)
 
-   2. ## **TECHNICAL PLAN** {#technical-plan}
+   ## 2.2. **TECHNICAL PLAN**
 
 * **Frontend:** Hosted on Amazon S3 with Amazon CloudFront CDN and HTTPS enabled via AWS Certificate Manager (ACM).  
 * **Backend API:** .NET runtime environment on AWS Lightsail.  
@@ -98,20 +95,20 @@ The AWS Jewelry Web project entails the development of a comprehensive Jewelry E
 * **Logging:** Amazon CloudWatch.  
 * **Secrets Management:** AWS Secrets Manager.
 
-  3. ## **PROJECT PLAN**
+## 2.3. **PROJECT PLAN**
 
 The implementation timeline is estimated to range from 6 to 12 weeks, contingent upon the final project scope.
 
-4. ## **SECURITY CONSIDERATIONS** {#security-considerations}
+ ## 2.4.**SECURITY CONSIDERATIONS** {#security-considerations}
 
 * **Access Control:** S3 private access configured, granting read permissions exclusively to CloudFront.  
 * **Credential Management:** API utilizes private keys stored securely in AWS Secrets Manager.  
 * **Encryption:** Full system-wide HTTPS implementation.  
 * **Authentication Security:** User login protected by Amazon Cognito.
 
-3. # **ACTIVITIES AND DELIVERABLES** {#activities-and-deliverables}
+ # 3. **ACTIVITIES AND DELIVERABLES** 
 
-   1. ## **ACTIVITIES AND DELIVERABLES** {#activities-and-deliverables-1}
+   ##  3.1. **ACTIVITIES AND DELIVERABLES** 
 
 | Project Phase | Timeline | Activities | Deliverables / Milestones | MD |
 | :---: | :---: | ----- | ----- | :---: |
@@ -126,7 +123,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 
 ## 
 
-2. ## **OUT OF SCOPE** {#out-of-scope}
+## 3.2. **OUT OF SCOPE** 
 
 * AI/Machine Learning features.  
 * Complex E-commerce functionalities.  
@@ -135,7 +132,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 * Complex administrative systems.  
 * Integration with third-party systems.
 
-  3. ## **PATH TO PRODUCTION** {#path-to-production}
+ ## 3.3. **PATH TO PRODUCTION** 
 
 * Operational Excellence Optimization.  
 * Secrets Management – Production Hardening.  
@@ -144,7 +141,7 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 * Disaster Recovery Plan.  
 * Production Handover.
 
-4. # **EXPECTED AWS COST BREAKDOWN BY SERVICES** {#expected-aws-cost-breakdown-by-services}
+# 4. **EXPECTED AWS COST BREAKDOWN BY SERVICES** 
 
 | Service Name | Upfront cost | Monthly cost | Region |
 | :---- | :---- | :---- | :---- |
@@ -158,19 +155,8 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 | Amazon CloudWatch | 0.00 USD | 0.30 USD | Asia Pacific (Singapore) |
 | AWS Lightsail – API Server | 0.00 USD | 5 \- 10 USD | Asia Pacific (Singapore) |
 
-5. # **TEAM** {#team}
+# 5. **TEAM** 
 
-**Partner Executive Sponsor**
-
-| Name | Title | Description | Email / Contact Info |
-| :---- | :---- | :---- | :---- |
-|  |  |  |  |
-
-**Project Stakeholders**
-
-| Name | Title | Stakeholder for | Email / Contact Info |
-| :---- | :---- | :---- | :---- |
-|  |  |  |  |
 
 **Partner Project Team**
 
@@ -182,13 +168,8 @@ The implementation timeline is estimated to range from 6 to 12 weeks, contingent
 | Trần Hồ Phương Khanh | Software Developer | Developer (FE) | khanhthpse185070@fpt.edu.vn |
 | Tăng Khanh Nhi | Software Developer | Developer (FE) | tangkhanhnhi111@gmail.com |
 
-**Project Escalation Contacts**
 
-| Name | Title | Role | Email / Contact Info |
-| :---- | :---- | :---- | :---- |
-|  |  |  |  |
-
-6. # **RESOURCES & COST ESTIMATES** {#resources-&-cost-estimates}
+# 6. **RESOURCES & COST ESTIMATES**
 
 | Resource | Responsibility | Rate (USD) / Hour |
 | :---- | :---- | ----- |
@@ -229,7 +210,7 @@ Cost Contribution distribution between Partner, Customer, AWS:
 | Partner |  |  |
 | AWS |  |  |
 
-7. # **ACCEPTANCE** {#acceptance}
+ # 7. **ACCEPTANCE** 
 
 Project is complete when: 09/12/2025
 
