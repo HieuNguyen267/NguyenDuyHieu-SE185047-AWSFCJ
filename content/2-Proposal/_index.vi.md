@@ -3,7 +3,7 @@ title: "Đề Xuất Dự Án"
 date: 2025-11-10
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 2. </b> "
 ---
 # **Nền Tảng Thương Mại Điện Tử Trang Sức**  
 ## **Hệ Thống Bán Hàng Trực Tuyến Dựa Trên Cloud Sử Dụng React, .NET và MySQL trên AWS Lightsail**  

@@ -3,7 +3,7 @@ title: "Project Proposal"
 date: 2025-11-10
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: " <b> 2. </b> "
 ---
 # **Jewelry E-Commerce Platform**  
 ## **Cloud-Based Online Sales System Using React, .NET, and MySQL on AWS Lightsail**  
