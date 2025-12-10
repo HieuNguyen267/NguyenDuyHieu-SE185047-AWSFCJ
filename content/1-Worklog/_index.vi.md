@@ -21,14 +21,14 @@ pre: " <b> 1. </b> "
 
 **Tuần 6:** [Mở rộng ứng dụng với Auto Scaling, ELB và ECS/Fargate](1.6-week6/)
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
+**Tuần 7:** [Dựng khung backend, model/enum/payload, cấu hình CORS](1.7-week7/)
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 8:** [Tích hợp Cognito JWT và Account service](1.8-week8/)
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
+**Tuần 9:** [Dịch vụ upload S3 presigned và xử lý ảnh](1.9-week9/)
 
-**Tuần 10:** [Làm công việc L...](1.10-week10/)
+**Tuần 10:** [Dịch vụ đánh giá (Review) với điểm và kiểm duyệt](1.10-week10/)
 
-**Tuần 11:** [Làm công việc M...](1.11-week11/)
+**Tuần 11:** [Khởi tạo Lightsail và PostgreSQL](1.11-week11/)
 
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+**Tuần 12:** [Deploy API, tinh chỉnh HTTPS/CORS, sửa lỗi sau phát hành](1.12-week12/)

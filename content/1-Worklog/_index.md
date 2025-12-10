@@ -22,14 +22,14 @@ pre: " <b> 1. </b> "
 **Week 6:** [Scaling applications with Auto Scaling, ELB, and ECS/Fargate](1.6-week6/)
 
 
-**Week 7:** [Setting up project infrastructure: repository, models, enums, utils, and CORS](1.7-week7/)
+**Week 7:** [Backend scaffolding, models, enums, payloads, CORS setup](1.7-week7/)
 
-**Week 8:** [Implementing Cognito JWT authentication and Account service](1.8-week8/)
+**Week 8:** [Cognito JWT auth and Account service integration](1.8-week8/)
 
-**Week 9:** [Configuring S3 upload service with presigned URLs](1.9-week9/)
+**Week 9:** [S3 presigned upload service and image handling](1.9-week9/)
 
-**Week 10:** [Building Review service with rating aggregation](1.10-week10/)
+**Week 10:** [Review service with ratings and moderation](1.10-week10/)
 
-**Week 11:** [Provisioning Lightsail instance and PostgreSQL database](1.11-week11/)
+**Week 11:** [Lightsail instance & PostgreSQL provisioning](1.11-week11/)
 
-**Week 12:** [Deploying backend API and fixing post-deployment issues](1.12-week12/)
+**Week 12:** [Deploy API, HTTPS/CORS tuning, post-release fixes](1.12-week12/)

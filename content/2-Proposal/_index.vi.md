@@ -95,15 +95,11 @@ Thời gian ước tính 6–12 tuần tùy phạm vi cuối.
 | Lightsail – API | 0.00 USD | 5–10 USD | AP-Singapore |
 
 ## 5. Đội dự án
+- Product Owner / PM: Nguyễn Duy Hiếu  
+- BE Dev: Lưu Ngọc Ngân Giang  
+- FE Dev: Nguyễn Huy Hoàng, Trần Hồ Phương Khanh, Tăng Khanh Nhi  
+- (Các ô liên hệ chi tiết điền theo bảng gốc nếu cần)
 
-
-| Name | Title | Role | Email / Contact Info |
-| :---- | :---- | :---- | :---- |
-| Nguyễn Duy Hiếu  | Product Owner | Project Manager (BE) | Hieundse185047@fpt.edu.vn |
-| Lưu Ngọc Ngân Giang | Software Developer | Developer (BE) | luungocngangiang25@gmail.com |
-| Nguyễn Huy Hoàng  | Software Developer | Developer (FE) | Hoangnhse185092@fpt.edu.vn |
-| Trần Hồ Phương Khanh | Software Developer | Developer (FE) | khanhthpse185070@fpt.edu.vn |
-| Tăng Khanh Nhi | Software Developer | Developer (FE) | tangkhanhnhi111@gmail.com |
 ## 6. Nhân lực & ước tính chi phí
 
 | Tài nguyên | Trách nhiệm | Tỷ lệ (USD) / Giờ |
